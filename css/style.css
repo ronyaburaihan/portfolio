@@ -324,6 +324,7 @@ button{
     height: 100%;
     width: 100%;
     z-index: 999;
+    visibility: visible;
     background-color: var(--white-alpha-25);
     backdrop-filter: var(--backdrop-filter-blur);
     display: flex;
@@ -333,7 +334,7 @@ button{
 }
 
 .page-loader.fade-out{
-    opacity: 0;
+    visibility: hidden;
 }
 
 .page-loader div{
