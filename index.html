@@ -14,16 +14,38 @@
   <!-- Main start -->
   <div class="main">
 
+    <!-- Header start -->
+    <header class="header">
+      <div class="container">
+        <div class="row flex-end">
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <div class="nav-inner">
+              <ul>
+                <li><a href="#home" class="nav-item link-item">Home</a></li>
+                <li><a href="#about" class="nav-item link-item">About</a></li>
+                <li><a href="#portfolio" class="nav-item link-item">Portfolio</a></li>
+                <li><a href="#contact" class="nav-item link-item">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
     <!-- Home section start -->
-    <section class="home-section align-items-center hidden">
+    <section class="home-section align-items-center active" id="home">
       <div class="container">
         <div class="row align-items-center">
           <div class="home-text">
             <p>Hello, I'm</p>
             <h1>Abu Raihan Rony</h1>
             <h2>Android Developer</h2>
-            <a href="#" class="btn">More about me</a>
-            <a href="#" class="btn">Portfolio</a>
+            <a href="#about" class="btn link-item">More about me</a>
+            <a href="#portfolio" class="btn link-item">Portfolio</a>
           </div>
 
           <div class="home-img">
@@ -38,7 +60,7 @@
 
     <!-- About section start -->
 
-    <section class="about-section section-padding hidden">
+    <section class="about-section section-padding" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -132,8 +154,8 @@
             </div>
             <!-- Experience end -->
 
-            <a href="Abu-Raihan-Rony_CV.pdf" class="btn">Download CV</a>
-            <a href="#" class="btn">Contact me</a>
+            <a href="Abu-Raihan-Rony_CV.pdf" target="_blank" class="btn">Download CV</a>
+            <a href="#contact" class="btn link-item">Contact me</a>
 
           </div>
         </div>
@@ -143,7 +165,7 @@
     <!-- About section end -->
 
     <!-- Portfolio section start -->
-    <section class="portfolio-section section-padding hidden">
+    <section class="portfolio-section section-padding" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -302,7 +324,7 @@
     <!-- Portfolio section end -->
 
     <!-- Contact section start -->
-    <section class="contact-section section-padding">
+    <section class="contact-section section-padding" id="contact">
       <div class="container">
         <div class="row">
           <div class="section-title">
