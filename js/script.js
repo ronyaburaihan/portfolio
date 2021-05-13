@@ -1,3 +1,10 @@
+/*--------------------- Prelaoder -----------------------*/
+window.addEventListener('load', () => {
+    document.querySelector('.main').classList.remove('hidden')
+    document.querySelector('.home-section').classList.add('active')
+    document.querySelector('.page-loader').classList.add('fade-out')
+})
+
 /*--------------------- Navbar Toggler -----------------------*/
 
 const navToggler = document.querySelector('.nav-toggler')
