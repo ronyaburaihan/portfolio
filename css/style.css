@@ -828,6 +828,12 @@ header .nav-inner ul li a:hover:before{
     top: -40px;
 }
 
+.pp-thumbnail{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .pp-thumbnail img{
     border-radius: 10px;
 }
