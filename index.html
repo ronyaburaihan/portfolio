@@ -39,6 +39,9 @@
           <button type="button" class="nav-toggler">
             <span></span>
           </button>
+          <button type="button" class="theme-toggler" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
           <nav class="nav">
             <div class="nav-inner">
               <ul>
@@ -60,10 +63,23 @@
         <div class="row align-items-center">
           <div class="home-text">
             <p>Hello, I'm</p>
-            <h1>Abu Raihan Rony</h1>
-            <h2>Android Developer</h2>
-            <a href="#about" class="btn link-item">More about me</a>
-            <a href="#portfolio" class="btn link-item">Portfolio</a>
+            <h1 id="profile-name">Abu Raihan Rony</h1>
+            <h2 id="profile-title">Mobile Application Developer</h2>
+            <p id="hero-summary">Building high‑quality <span class="highlight">Android</span> & <span class="highlight">cross‑platform apps</span> with <span class="highlight">Kotlin</span>, <span class="highlight">Compose</span>, <span class="highlight">Flutter</span>.</p>
+            <div class="hero-badges" id="hero-badges">
+              <span class="badge"><i class="fas fa-briefcase"></i> 5+ years experience</span>
+              <span class="badge"><i class="fas fa-wifi"></i> Available for remote</span>
+              <span class="badge"><i class="fas fa-map-marker-alt"></i> Based in Bangladesh</span>
+            </div>
+            <div class="cta-group">
+              <a id="cta-resume" href="Resume_Of_Abu_Raihan_Rony.pdf" target="_blank" class="btn btn-primary">Download CV</a>
+              <a id="cta-contact" href="#contact" class="btn">Contact me</a>
+            </div>
+            <div class="social-mini">
+              <a id="cta-github" href="https://github.com/ronyaburaihan" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/ronyaburaihan/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/ronyaburaihan" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
           </div>
 
           <div class="home-img">
@@ -97,56 +113,49 @@
             <p>Interested to learn new technology and solving real-life problems. I always try to dedicatedly focus on my work. Possess excellent analytical skills, and ability to work in team environments. I am aiming to use my knowledge that I have acquired from my experience and my hard work to satisfy your organization and am also willing to learn more from this job.</p>
             <h3>Skills</h3>
 
-            <div class="skills">
-              <div class="skill-item">Android</div>
+            <div class="skills" id="skills">
               <div class="skill-item">Kotlin</div>
               <div class="skill-item">Java</div>
-              <div class="skill-item">XML</div>
+              <div class="skill-item">Android SDK</div>
+              <div class="skill-item">Jetpack Compose</div>
+              <div class="skill-item">Kotlin Multiplatform</div>
               <div class="skill-item">Flutter</div>
               <div class="skill-item">Dart</div>
-              <div class="skill-item">Firebase</div>
-              <div class="skill-item">Node.js</div>
-              <div class="skill-item">Javascript</div>
-              <div class="skill-item">C</div>
-              <div class="skill-item">Html</div>
-              <div class="skill-item">Css</div>
-              <div class="skill-item">Adobe XD</div>
+              <div class="skill-item">Ktor</div>
+              <div class="skill-item">Clean Architecture</div>
+              <div class="skill-item">MVVM</div>
+              <div class="skill-item">MVP</div>
+              <div class="skill-item">MVC</div>
+              <div class="skill-item">Dagger</div>
+              <div class="skill-item">Hilt</div>
+              <div class="skill-item">Koin</div>
+              <div class="skill-item">Coroutines</div>
+              <div class="skill-item">Room</div>
+              <div class="skill-item">Retrofit</div>
+              <div class="skill-item">Firebase (Auth, Firestore, Realtime DB, FCM, Crashlytics)</div>
+              <div class="skill-item">RESTful APIs</div>
+              <div class="skill-item">Push Notifications</div>
+              <div class="skill-item">Location Services</div>
+              <div class="skill-item">SQLite</div>
+              <div class="skill-item">WorkManager</div>
+              <div class="skill-item">Android Studio</div>
+              <div class="skill-item">Gradle</div>
             </div>
 
             <div class="about-tabs">
               <button type="button" class="tab-item active" data-target="#education">Education</button>
               <button type="button" class="tab-item" data-target="#experience">Experience</button>
+              <button type="button" class="tab-item" data-target="#training">Training</button>
+              <button type="button" class="tab-item" data-target="#languages">Languages</button>
             </div>
 
             <!-- Education start -->
             <div class="tab-content active" id="education">
-              <div class="timelines">
+              <div class="timelines" id="education-timelines">
                 <div class="timeline-item">
-                  <span class="date">January, 2018 - December, 2021</span>
-                  <h4>Bachelor Of Computer Science And Engineering</h4>
-                  <span>Daffodil International University</span>
-                  <p>CGPA: 3.20 out of 4</p>
-                  <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores in dolor ut magni iure
-                    voluptatum!</p> -->
-                </div>
-
-                <div class="timeline-item">
-                  <span class="date">April, 2014 - December, 2017</span>
-                  <h4>Higher Secondary Certificate</h4>
-                  <span>Evergreen Model College</span>
-                  <p>GPA: 4.50 out of 5</p>
-                  <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores in dolor ut magni iure
-                    voluptatum!</p> -->
-                </div>
-
-                <div class="timeline-item">
-                  <span class="date">January,2009 - March, 2014</span>
-                  <h4>Secondary School Certificate</h4>
-                  <span>Taherpur Fazill (Degree) Madrasah</span>
-                  <p>GPA: 4.88 out of 5</p>
-                  <p></p>
-                  <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores in dolor ut magni iure
-                    voluptatum!</p> -->
+                  <span class="date">Jan 2018 – Jan 2022</span>
+                  <h4>Bachelor of Science in Computer Science & Engineering</h4>
+                  <span>Daffodil International University, Dhaka, Bangladesh</span>
                 </div>
               </div>
             </div>
@@ -155,47 +164,58 @@
 
             <!-- Experience start -->
             <div class="tab-content" id="experience">
-              <div class="timelines">
+              <div class="timelines" id="experience-timelines">
                 <div class="timeline-item">
-                  <span class="date">August, 2022 - Present</span>
-                  <h4>Android Developer <span>at Teleaus - Gulshan 2, Dhaka</span></h4>
-                  <p>● Developed native android application using Java and Kotlin.<br>
-                    ● Worked with outside data sources and API’s.<br>
-                    ● Deal with different mobile screen sizes.<br>
-                    ● Implemented new technologies to increase development efficiency.
-                    </p>
+                  <span class="date">Jun 2025 – Present</span>
+                  <h4>Senior Software Engineer <span>Envobyte LTD — Khulna, Bangladesh</span></h4>
+                  <p>• Developed native Android apps using Kotlin and Kotlin Multiplatform.<br>
+                     • Implemented Clean Architecture with Dagger Hilt/Koin and Coroutines for async programming.<br>
+                     • Led mobile app development teams and collaborated with designers and product managers.</p>
                 </div>
-
                 <div class="timeline-item">
-                  <span class="date">February, 2022 - May, 2022</span>
-                  <h4>Android Developer <span>at Prime Bazar - Shiddhirganj, Narayenganj</span></h4>
-                  <p>● Developed native android application using Java and Kotlin and
-                    Cross-Platform application using Flutter.<br>
-                    ● Involved in the full lifecycle of projects including analysis and design,
-                    development debugging, testing, and deployment.<br>
-                    ● Developed the application from specifications and requirements
-                    gathering.<br>
-                    ● Worked with outside data sources and API’s.<br>
-                    ● Implemented Clean Architecture using Dagger Hilt and Kotlin
-                    Coroutines.
-                    ● Implemented new technologies to increase development efficiency.</p>
+                  <span class="date">Aug 2022 – Dec 2024</span>
+                  <h4>Software Engineer – Android <span>Genofax® Life Sciences — Dhaka, Bangladesh</span></h4>
+                  <p>• Built Android apps with Kotlin, XML, MVVM; used Dagger Hilt, Retrofit, Room, Coroutines.<br>
+                     • Contributed to iOS with Flutter/Dart and MVC; GetX for state management.<br>
+                     • Focused on performance, scalability, and high code quality.</p>
                 </div>
-
                 <div class="timeline-item">
-                  <span class="date">December, 2019 - January, 2022</span>
-                  <h4>Android Developer <span>at SoftLab IT – Mirpur 10, Dhaka</span></h4>
-                  <p>● Developed native android application using Java and Kotlin.<br>
-                    ● Developed application from specifications and requirements gathering.<br>
-                    ● Deal with different mobile screen sizes.<br>
-                    ● Worked with third-party libraries, API’s, offline storage, threading,
-                    offline database, and performance tuning.<br>
-                    ● Collaborated with designers, engineers, and product managers to build
-                    great experiences.</p>
+                  <span class="date">Feb 2022 – May 2022</span>
+                  <h4>Android Developer <span>Prime IT — Narayanganj, Bangladesh</span></h4>
+                  <p>• Developed native Android apps in Java/Kotlin and cross‑platform apps in Flutter.<br>
+                     • Implemented MVVM with Dagger Hilt and Coroutines; integrated RESTful APIs.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">Dec 2019 – Jan 2022</span>
+                  <h4>Android Developer (Part‑Time) <span>SoftLab IT — Dhaka, Bangladesh</span></h4>
+                  <p>• Built Android apps from specs; optimized layouts for diverse screen sizes.<br>
+                     • Integrated third‑party libraries, offline storage (SQLite), threading, and local databases.</p>
                 </div>
               </div>
             </div>
             <!-- Experience end -->
 
+            <div class="tab-content" id="training">
+              <div class="timelines" id="training-timelines">
+                <div class="timeline-item">
+                  <span class="date">Jul 2018 – Dec 2018</span>
+                  <h4>Android Application Development</h4>
+                  <span>BASIS Institute of Technology & Management Limited (BITM), Dhaka, Bangladesh</span>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="languages">
+              <div class="timelines" id="languages-timelines">
+                <div class="timeline-item">
+                  <h4>Bangla</h4>
+                  <span>Native or Bilingual Proficiency</span>
+                </div>
+                <div class="timeline-item">
+                  <h4>English</h4>
+                  <span>Professional Working Proficiency</span>
+                </div>
+              </div>
+            </div>
             <a href="Resume_Of_Abu_Raihan_Rony.pdf" target="_blank" class="btn">Download CV</a>
             <a href="#portfolio" class="btn link-item">Portfolio</a>
             <a href="#contact" class="btn link-item">Contact me</a>
@@ -215,7 +235,7 @@
             <h2>Recent work</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="portfolio-list">
 
           <!-- Portfolio item start -->
           <div class="portfolio-item">
@@ -383,33 +403,19 @@
 
           <!-- Portfolio item start -->
           <div class="portfolio-item">
-            <img src="img/portfolio/hash-generator.png" alt="portfolio item thumbnail">
-            <h3 class="portfolio-item-title">Hash Generator</h3>
+            <img src="img/portfolio/speak-english-online.png" alt="portfolio item thumbnail">
+            <h3 class="portfolio-item-title">DogPro – Dog Profiling (Android)</h3>
             <button type="button" class="btn view-project-btn">View project</button>
             <div class="portfolio-item-details">
               <div class="description">
-                <p>Hash Generator lets you generate the hash value (message digest) for any text message using popular
-                  hashing algorithms.
-
-                  In this application, the available hash functions are : SHA-1, SHA-224, SHA-256, SHA-384, SHA-512,
-                  MD5.
-                  The calculated hash you can copy to the clipboard to be used anywhere.
-
-                  MD5 is a secure hash algorithm. It takes a string as input and produces a 128-bit number. The same
-                  string always produces the same hash, but given a hash, it is not generally possible to determine the
-                  original string. Secure hash algorithms are useful for protecting passwords and ensuring data
-                  integrity.
-
-                  This hash generator converts your sensitive data like passwords to popular hashing algorithms.</p>
+                <p>Android app for dog breed classification and profiling. Enhanced performance, integrated Retrofit for API communication, and Kotlin Coroutines for smooth UX. Focused on image recognition and codebase improvements.</p>
               </div>
               <div class="general-info">
                 <ul>
-                  <li>Created - <span>December 28, 2020</span></li>
-                  <li>Technoligies used - <span>Kotlin, XML</span></li>
-                  <li>Role - <span>Developer</span></li>
-                  <li>View online - <span><a
-                        href="https://play.google.com/store/apps/details?id=com.techdoctorbd.hashgenerator"
-                        target="_blank">Google Play Store</a></span></li>
+                  <li>Created - <span>Aug 2022 – Dec 2024</span></li>
+                  <li>Technoligies used - <span>Kotlin, XML, MVVM, Retrofit, Coroutines</span></li>
+                  <li>Role - <span>Android Developer</span></li>
+                  <li>View online - <span>—</span></li>
                 </ul>
               </div>
             </div>
@@ -418,23 +424,19 @@
 
           <!-- Portfolio item start -->
           <div class="portfolio-item">
-            <img src="img/portfolio/techdoctorbd.PNG" alt="portfolio item thumbnail">
-            <h3 class="portfolio-item-title">Application Landing Website</h3>
+            <img src="img/portfolio/ramadan-calendar.png" alt="portfolio item thumbnail">
+            <h3 class="portfolio-item-title">Genofax (Android & iOS)</h3>
             <button type="button" class="btn view-project-btn">View project</button>
             <div class="portfolio-item-details">
               <div class="description">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi veritatis numquam alias praesentium
-                  quisquam molestiae quia deserunt voluptates aliquid dicta quidem tenetur nihil nisi in mollitia unde
-                  itaque magni ullam consectetur, earum impedit nostrum aperiam. Saepe, voluptatum obcaecati enim
-                  itaque laboriosam, ratione aut adipisci nam reprehenderit ab maiores eum aliquid!</p>
+                <p>Dual‑platform health application for Android and iOS. Led Android using Kotlin, XML, MVVM, Dagger Hilt; Retrofit for API; Coroutines for async ops. Managed iOS in Flutter/Dart with MVC and GetX. Focused on performance, scalability, and code quality.</p>
               </div>
               <div class="general-info">
                 <ul>
-                  <li>Created - <span>January, 2021</span></li>
-                  <li>Technoligies used - <span>Html,Css,Bootstrap,jQuery</span></li>
-                  <li>Role - <span>Developer</span></li>
-                  <li>View online - <span><a href="https://techdoctorbd.com"
-                        target="_blank">www.techdoctorbd.com</a></span></li>
+                  <li>Created - <span>Sep 2022 – Dec 2024</span></li>
+                  <li>Technoligies used - <span>Kotlin, XML, MVVM, Dagger Hilt, Retrofit, Coroutines; Flutter, Dart, MVC, GetX</span></li>
+                  <li>Role - <span>Mobile Application Developer</span></li>
+                  <li>View online - <span>—</span></li>
                 </ul>
               </div>
             </div>
@@ -481,15 +483,15 @@
           <div class="contact-info">
             <div class="contact-info-item">
               <h3>Email</h3>
-              <p>ronyaburaihan@gmail.com</p>
+              <p id="contact-email">ronyaburaihan@gmail.com</p>
             </div>
             <div class="contact-info-item">
               <h3>Phone</h3>
-              <p>+8801750787171</p>
+              <p id="contact-phone">+8801750787171</p>
             </div>
             <div class="contact-info-item">
               <h3>Follow me</h3>
-              <div class="social-links">
+              <div class="social-links" id="social-links">
                 <a href="https://www.facebook.com/ronyaburaihan" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://github.com/ronyaburaihan" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://play.google.com/store/apps/dev?id=7669748052960276373" target="_blank"><i

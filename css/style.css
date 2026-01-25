@@ -17,6 +17,20 @@
     --backdrop-filter-blur: blur(5px);
 }
 
+body.dark{
+    --main-color: #66d9ef;
+    --blue: #6ccff6;
+    --blue-dark: #e6f1ff;
+    --orange: #ffb86c;
+    --green-yellow: #0b1020;
+    --pink-light: #0d1324;
+    --cyan-light: #101a2e;
+    --white: #0b1222;
+    --white-alpha-40: rgba(255,255,255,0.10);
+    --white-alpha-25: rgba(255,255,255,0.07);
+    --backdrop-filter-blur: blur(5px);
+}
+
 /*---------------------- Global Styles ---------------------*/
 *{
     box-sizing: border-box;
@@ -28,6 +42,11 @@
 ::before,
 ::after{
     box-sizing: border-box;
+}
+
+::selection {
+    background: var(--main-color);
+    color: var(--white);
 }
 
 body{
@@ -388,7 +407,8 @@ button{
     margin: auto;
 }
 
-.header .nav-toggler{
+.header .nav-toggler,
+.header .theme-toggler{
     width: 50px;
     height: 50px;
     border: none;
@@ -403,6 +423,10 @@ button{
     z-index: 1;
     transition: opacity 0.5s ease-in-out;
 }
+
+.header .theme-toggler i{
+    color: var(--main-color);
+} 
 
 .header .nav-toggler.hide{
     opacity: 0;
@@ -543,22 +567,110 @@ header .nav-inner ul li a:hover:before{
 
 .home-text p{
     font-size: 18px;
+    line-height: 1.6;
 }
 
 .home-text h1{
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
     text-transform: capitalize;
 }
 
 .home-text h2{
-    font-size: 20px;
+    font-size: 24px;
     text-transform: capitalize;
-    font-weight: 300;
-    margin: 0 0 30px;
+    font-weight: 500;
+    margin: 0 0 25px;
+    color: var(--blue-dark);
+    opacity: 0.9;
+}
+
+.highlight {
+    color: var(--main-color);
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
 }
 
 .home-text .btn{
     margin: 0 15px 15px 0;
+}
+
+.hero-badges{
+    margin: 20px 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hero-badges .badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    backdrop-filter: blur(5px);
+    color: var(--blue-dark);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.hero-badges .badge:hover {
+    background-color: var(--white-alpha-40);
+    transform: translateY(-2px);
+}
+
+.hero-badges .badge i {
+    color: var(--main-color);
+}
+
+.social-mini {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-mini a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    border-radius: 50%;
+    color: var(--main-color);
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.social-mini a:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    color: var(--white);
+    border-color: var(--main-color);
+}
+
+.btn-primary::before {
+    background-color: var(--white);
+}
+
+.btn-primary:hover {
+    color: var(--main-color);
+}
+
+.cta-group{
+    margin-top: 10px;
 }
 
 .home-img .img-box{
@@ -567,6 +679,13 @@ header .nav-inner ul li a:hover:before{
     border-radius: 50%;
     border: 8px solid var(--white-alpha-25); 
     margin: auto;
+    animation: floatImage 4s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+@keyframes floatImage {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
 }
 
 .home-img .img-box img{
@@ -894,7 +1013,7 @@ header .nav-inner ul li a:hover:before{
     font-size: 16px;
     background-color: var(--white-alpha-25);
     padding: 0 20px;
-    color: avr(--blue-dark);
+    color: var(--blue-dark);
     border: 1px solid transparent;
     transition: border-color 0.3s ease;
 }

@@ -1,0 +1,228 @@
+{
+  "profile": {
+    "name": "Abu Raihan Rony",
+    "title": "Mobile Application Developer",
+    "avatar": "img/profile-pic.png",
+    "resumeUrl": "Resume_Of_Abu_Raihan_Rony.pdf",
+    "tagline": "Building high‑quality <span class='highlight'>Android</span> & <span class='highlight'>cross‑platform apps</span> with <span class='highlight'>Kotlin</span>, <span class='highlight'>Compose</span>, <span class='highlight'>Flutter</span>.",
+    "badges": ["<i class='fas fa-briefcase'></i> 5+ years experience", "<i class='fas fa-wifi'></i> Available for remote", "<i class='fas fa-map-marker-alt'></i> Based in Bangladesh"],
+    "contacts": {
+      "email": "ronyaburaihan@gmail.com",
+      "phone": "+8801750787171",
+      "socials": {
+        "facebook": "https://www.facebook.com/ronyaburaihan",
+        "github": "https://github.com/ronyaburaihan",
+        "googlePlay": "https://play.google.com/store/apps/dev?id=7669748052960276373",
+        "website": "https://techdoctorbd.com/",
+        "youtube": "https://www.youtube.com/techdoctorbdr",
+        "linkedin": "https://www.linkedin.com/in/ronyaburaihan/",
+        "twitter": "https://twitter.com/ronyaburaihan"
+      }
+    }
+  },
+  "skills": {
+    "languages_frameworks": [
+      "Kotlin", "Java", "Dart", "XML", "Android SDK", "Flutter",
+      "Jetpack Compose", "Kotlin Multiplatform", "Ktor"
+    ],
+    "architecture_patterns": [
+      "Clean Architecture", "MVVM", "MVP", "MVC", "Modular Architecture", "Jetpack Components"
+    ],
+    "tools_technologies": [
+      "Android Studio", "Gradle", "Dagger", "Hilt", "Koin", "Coroutines", "Room", "Retrofit",
+      "Firebase Auth", "Firebase Firestore", "Firebase Realtime DB", "FCM", "Crashlytics",
+      "RESTful APIs", "Push Notifications", "Location Services", "SQLite", "WorkManager"
+    ]
+  },
+  "education": [
+    {
+      "date": "Jan 2018 – Jan 2022",
+      "title": "Bachelor of Science in Computer Science & Engineering",
+      "place": "Daffodil International University, Dhaka, Bangladesh"
+    }
+  ],
+  "experience": [
+    {
+      "date": "Jun 2025 – Present",
+      "title": "Senior Software Engineer",
+      "place": "Envobyte LTD — Khulna, Bangladesh",
+      "details": [
+        "Developed native Android apps using Kotlin and Kotlin Multiplatform",
+        "Implemented Clean Architecture with Dagger Hilt/Koin and Coroutines for async programming",
+        "Led mobile app teams; collaborated with designers and product managers"
+      ]
+    },
+    {
+      "date": "Aug 2022 – Dec 2024",
+      "title": "Software Engineer – Android",
+      "place": "Genofax® Life Sciences — Dhaka, Bangladesh",
+      "details": [
+        "Android development using Kotlin, XML, MVVM; Dagger Hilt, Retrofit, Room, Coroutines",
+        "iOS development with Flutter/Dart and MVC; GetX for state management",
+        "Focused on performance, scalability, and high code quality"
+      ]
+    },
+    {
+      "date": "Feb 2022 – May 2022",
+      "title": "Android Developer",
+      "place": "Prime IT — Narayanganj, Bangladesh",
+      "details": [
+        "Native Android in Java/Kotlin and cross‑platform apps in Flutter",
+        "MVVM with Dagger Hilt and Coroutines; integrated RESTful APIs"
+      ]
+    },
+    {
+      "date": "Dec 2019 – Jan 2022",
+      "title": "Android Developer (Part‑Time)",
+      "place": "SoftLab IT — Dhaka, Bangladesh",
+      "details": [
+        "Built apps from specs; adapted UI for diverse screen sizes",
+        "Integrated third‑party libraries, offline storage (SQLite), threading, local databases"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Genofax (Android & iOS)",
+      "image": "img/portfolio/star-note-social.PNG",
+      "period": "Sep 2022 – Dec 2024",
+      "technologies": ["Kotlin", "XML", "MVVM", "Dagger Hilt", "Retrofit", "Coroutines", "Flutter", "Dart", "MVC", "GetX"],
+      "role": "Mobile Application Developer",
+      "description": "Dual‑platform health application. Led Android (Kotlin/MVVM/Dagger Hilt/Retrofit/Coroutines) and iOS (Flutter/Dart with MVC, GetX). Optimized performance, scalability, and code quality.",
+      "link": null,
+      "linkLabel": null
+    },
+    {
+      "title": "DogPro – Dog Profiling (Android)",
+      "image": "img/portfolio/speak-english-online.png",
+      "period": "Aug 2022 – Dec 2024",
+      "technologies": ["Kotlin", "XML", "MVVM", "Retrofit", "Coroutines"],
+      "role": "Android Developer",
+      "description": "Dog breed classification and profiling app. Enhanced performance, integrated image recognition and efficient API communication.",
+      "link": null,
+      "linkLabel": null
+    },
+    {
+      "title": "Amar Arabi Ovidhan – Dictionary App (Android)",
+      "image": "img/portfolio/age-calculator.png",
+      "period": "Mar 2022 – Mar 2023",
+      "technologies": ["Kotlin", "XML", "MVVM", "Dagger Hilt", "Retrofit", "Room", "Coroutines"],
+      "role": "Android Developer",
+      "description": "Modernized dictionary app with enhanced UI and offline access via Room. Implemented authentication, word list browsing, search, and bookmarks.",
+      "link": null,
+      "linkLabel": null
+    },
+    {
+      "title": "Prime Bazar – E‑commerce App",
+      "image": "img/portfolio/alo-blood-donor.png",
+      "period": "Feb 2022 – May 2022",
+      "technologies": ["Flutter", "Dart"],
+      "role": "Android Developer",
+      "description": "Contributed to an e‑commerce application built in Flutter. Improved performance, added features, updated UI, and fixed bugs.",
+      "link": null,
+      "linkLabel": null
+    },
+    {
+      "title": "SB‑Live – Live Stream Video Chat",
+      "image": "img/portfolio/hash-generator.png",
+      "period": "Mar 2022 – Dec 2022",
+      "technologies": ["Agora SDK", "Firebase Authentication", "Firebase Realtime Database", "Kotlin", "XML", "MVVM"],
+      "role": "Android Developer",
+      "description": "Developed a social platform for real‑time live streaming and video chat. Implemented broadcasting, connection, engagement features, and real‑time data syncing.",
+      "link": null,
+      "linkLabel": null
+    },
+    {
+      "title": "Talent Torrent – Remote Work Platform",
+      "image": "img/portfolio/star-note-social.PNG",
+      "period": "Aug 2022 – Dec 2024",
+      "technologies": ["Kotlin", "XML", "MVVM", "Coroutines", "Stripe"],
+      "role": "Android Developer",
+      "description": "Technology‑based remote work platform connecting talent and businesses. Optimized performance and integrated Stripe payment gateway.",
+      "link": null,
+      "linkLabel": null
+    },
+    {
+      "title": "Ramadan Calendar",
+      "image": "img/portfolio/ramadan-calendar.png",
+      "created": "May 6, 2019",
+      "technologies": ["Kotlin", "XML"],
+      "role": "Developer",
+      "description": "Daily sahri/iftar schedule for districts of Bangladesh with countdowns and alarms.",
+      "link": "https://play.google.com/store/apps/details?id=englesoft.com.dailyramadan",
+      "linkLabel": "Google Play Store"
+    },
+    {
+      "title": "Speak English Online",
+      "image": "img/portfolio/speak-english-online.png",
+      "created": "July 19, 2021",
+      "technologies": ["Kotlin", "XML", "Firebase", "Agora"],
+      "role": "Developer",
+      "description": "Anonymous voice calls with global users for English speaking practice; unlimited calls and security features.",
+      "link": "https://play.google.com/store/apps/details?id=com.techdoctorbd.anonymouscall",
+      "linkLabel": "Google Play Store"
+    },
+    {
+      "title": "Starnote Social",
+      "image": "img/portfolio/star-note-social.PNG",
+      "created": "February 12, 2021",
+      "technologies": ["Java", "Kotlin", "XML", "Firebase", "Sinch SDK"],
+      "role": "Developer",
+      "description": "Social & learning app with feeds, groups, chat, audio/video calls, live, games, and privacy controls.",
+      "link": "https://play.google.com/store/apps/details?id=com.stardigiinternational.starnotee",
+      "linkLabel": "Google Play Store"
+    },
+    {
+      "title": "Age Calculator",
+      "image": "img/portfolio/age-calculator.png",
+      "created": "November 22, 2020",
+      "technologies": ["Java", "XML"],
+      "role": "Developer",
+      "description": "Calculates age in years, months, weeks, days, hours, minutes, seconds; shows upcoming birthdays.",
+      "link": "https://play.google.com/store/apps/details?id=com.techdoctorbd.agecalculator",
+      "linkLabel": "Google Play Store"
+    },
+    {
+      "title": "Alo Blood Donor",
+      "image": "img/portfolio/alo-blood-donor.png",
+      "created": "July 29, 2019",
+      "technologies": ["Java", "XML", "Firebase"],
+      "role": "Developer",
+      "description": "Blood donor app with Firebase backend; donor listings and contact flow.",
+      "link": "https://play.google.com/store/apps/details?id=bd.com.aloblooddonor",
+      "linkLabel": "Google Play Store"
+    },
+    {
+      "title": "Hash Generator",
+      "image": "img/portfolio/hash-generator.png",
+      "created": "December 28, 2020",
+      "technologies": ["Kotlin", "XML"],
+      "role": "Developer",
+      "description": "Generates SHA‑1/224/256/384/512 and MD5 hashes for text; copy to clipboard.",
+      "link": "https://play.google.com/store/apps/details?id=com.techdoctorbd.hashgenerator",
+      "linkLabel": "Google Play Store"
+    },
+    {
+      "title": "Application Landing Website",
+      "image": "img/portfolio/techdoctorbd.PNG",
+      "created": "January, 2021",
+      "technologies": ["HTML", "CSS", "Bootstrap", "jQuery"],
+      "role": "Developer",
+      "description": "Marketing landing site for applications with responsive design.",
+      "link": "https://techdoctorbd.com",
+      "linkLabel": "Website"
+    }
+  ],
+  "training": [
+    {
+      "date": "Jul 2018 – Dec 2018",
+      "title": "Android Application Development",
+      "place": "BASIS Institute of Technology & Management Limited (BITM), Dhaka, Bangladesh",
+      "details": null
+    }
+  ],
+  "languages": [
+    { "name": "Bangla", "level": "Native or Bilingual Proficiency" },
+    { "name": "English", "level": "Professional Working Proficiency" }
+  ]
+}
