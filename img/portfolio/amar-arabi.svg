@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.07"/>
+    </linearGradient>
+    <linearGradient id="bookPage" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="700" cy="65" r="170" fill="white" opacity="0.04"/>
+  <circle cx="80" cy="400" r="145" fill="#f59e0b" opacity="0.06"/>
+  <circle cx="650" cy="390" r="80" fill="white" opacity="0.03"/>
+  <!-- Icon circle -->
+  <circle cx="400" cy="175" r="90" fill="url(#iconGrad)" stroke="white" stroke-opacity="0.2" stroke-width="1.5"/>
+  <!-- Open book - left page -->
+  <path d="M 340 130 Q 340 120 355 120 L 395 125 L 395 220 L 355 218 Q 340 218 340 208 Z" fill="url(#bookPage)" opacity="0.92"/>
+  <!-- Left page lines -->
+  <line x1="348" y1="138" x2="388" y2="139" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="348" y1="148" x2="388" y2="149" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="348" y1="158" x2="388" y2="159" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="348" y1="168" x2="388" y2="169" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="348" y1="178" x2="388" y2="179" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="348" y1="188" x2="388" y2="189" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="348" y1="198" x2="388" y2="199" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <!-- Open book - right page -->
+  <path d="M 460 130 Q 460 120 445 120 L 405 125 L 405 220 L 445 218 Q 460 218 460 208 Z" fill="url(#bookPage)" opacity="0.92"/>
+  <!-- Right page lines - Arabic squiggles style -->
+  <line x1="413" y1="138" x2="453" y2="139" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="413" y1="148" x2="453" y2="149" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="413" y1="158" x2="440" y2="159" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="413" y1="168" x2="453" y2="169" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="413" y1="178" x2="445" y2="179" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="413" y1="188" x2="453" y2="189" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <line x1="413" y1="198" x2="435" y2="199" stroke="white" stroke-width="1.5" opacity="0.5"/>
+  <!-- Book spine center -->
+  <rect x="396" y="118" width="8" height="106" rx="2" fill="#d97706" opacity="0.9"/>
+  <!-- Title -->
+  <text x="400" y="308" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="700" fill="white" letter-spacing="0.5">Amar Arabi Ovidhan</text>
+  <text x="400" y="340" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" fill="white" opacity="0.75">Arabic Dictionary App · Android</text>
+  <!-- Tech tags -->
+  <rect x="218" y="364" width="65" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="250" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Kotlin</text>
+  <rect x="293" y="364" width="72" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="329" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">MVVM</text>
+  <rect x="375" y="364" width="66" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="408" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Room</text>
+  <rect x="451" y="364" width="90" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="496" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Dagger Hilt</text>
+  <text x="400" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.45">Mar 2022 – Mar 2023</text>
+</svg>

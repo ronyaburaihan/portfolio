@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b21b6"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="740" cy="60" r="190" fill="white" opacity="0.05"/>
+  <circle cx="70" cy="400" r="160" fill="white" opacity="0.05"/>
+  <circle cx="130" cy="80" r="80" fill="white" opacity="0.04"/>
+  <!-- Icon circle -->
+  <circle cx="400" cy="175" r="90" fill="url(#iconGrad)" stroke="white" stroke-opacity="0.2" stroke-width="1.5"/>
+  <!-- Keyboard outline -->
+  <rect x="346" y="143" width="108" height="68" rx="8" fill="none" stroke="white" stroke-width="3" opacity="0.9"/>
+  <!-- Keyboard keys row 1 -->
+  <rect x="353" y="150" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="371" y="150" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="389" y="150" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="407" y="150" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="425" y="150" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="434" y="150" width="14" height="10" rx="2" fill="white" opacity="0.0"/>
+  <!-- Keyboard keys row 2 -->
+  <rect x="353" y="164" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="371" y="164" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="389" y="164" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="407" y="164" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="425" y="164" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="434" y="164" width="14" height="10" rx="2" fill="white" opacity="0.0"/>
+  <!-- Keyboard keys row 3 - spacebar -->
+  <rect x="353" y="178" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="371" y="178" width="60" height="10" rx="2" fill="white" opacity="0.8"/>
+  <rect x="435" y="178" width="14" height="10" rx="2" fill="white" opacity="0.8"/>
+  <!-- AI Sparkle stars -->
+  <circle cx="330" cy="145" r="4" fill="white" opacity="0.9"/>
+  <line x1="330" y1="135" x2="330" y2="155" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <line x1="320" y1="145" x2="340" y2="145" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="475" cy="145" r="3" fill="white" opacity="0.9"/>
+  <line x1="475" y1="138" x2="475" y2="152" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <line x1="468" y1="145" x2="482" y2="145" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="330" cy="210" r="3" fill="white" opacity="0.7"/>
+  <line x1="330" y1="204" x2="330" y2="216" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <line x1="324" y1="210" x2="336" y2="210" stroke="white" stroke-width="1.5" opacity="0.6"/>
+  <!-- Title -->
+  <text x="400" y="305" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="36" font-weight="700" fill="white" letter-spacing="1">ImproveType</text>
+  <text x="400" y="337" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" fill="white" opacity="0.75">AI-Powered Android Keyboard · 56+ Languages</text>
+  <!-- Tech tags -->
+  <rect x="205" y="362" width="68" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="239" y="381" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Kotlin</text>
+  <rect x="283" y="362" width="100" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="333" y="381" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Jetpack Compose</text>
+  <rect x="393" y="362" width="82" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="434" y="381" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Multi-Module</text>
+  <rect x="485" y="362" width="108" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="539" y="381" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Clean Architecture</text>
+  <text x="400" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.5">Envobyte LTD · Oct 2025 – Feb 2026</text>
+</svg>
