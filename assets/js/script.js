@@ -72,7 +72,7 @@ document.addEventListener('click', (e) => {
 
 /*--------------------- Data Loading -----------------------*/
 function loadData() {
-    fetch('assets/data/data.json')
+    fetch('assets/data/data.json', { cache: 'no-store' })
         .then(res => res.json())
         .then(data => {
             applyProfile(data.profile)
