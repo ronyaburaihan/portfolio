@@ -49,10 +49,10 @@
       "title": "Senior Software Engineer (Android & iOS)",
       "place": "Envobyte LTD — Khulna, Bangladesh",
       "details": [
-        "Developed and maintained native Android apps using Kotlin, and cross-platform apps using Kotlin Multiplatform.",
-        "Applied Clean Architecture with Dagger Hilt, Koin, Kotlin Coroutines, Flow, and Retrofit.",
-        "Led mobile app development team, managing features, architecture decisions, and agile sprint delivery.",
-        "Performed code reviews, debugging, and performance optimization with cross-functional teams."
+        "Developed and maintained native <strong>Android</strong> apps using <strong>Kotlin</strong>, and cross-platform apps for <strong>Android</strong> and <strong>iOS</strong> using <strong>Kotlin Multiplatform</strong>.",
+        "Applied <strong>Clean Architecture</strong> with <strong>Dagger Hilt, Koin, Kotlin Coroutines, Flow, and Retrofit</strong>, improving <strong>scalability, maintainability, and asynchronous</strong> data handling.",
+        "Led the mobile app development team, managing feature development, architecture decisions, and <strong>agile sprint delivery and code quality standards</strong>.",
+        "Performed <strong>regular code reviews, debugging, and performance optimization</strong>, collaborating with <strong>UI/UX designers, backend engineers, and product managers</strong> to deliver high-quality mobile apps."
       ]
     },
     {
@@ -60,10 +60,11 @@
       "title": "Software Engineer – Android",
       "place": "Genofax® Life Sciences — Dhaka, Bangladesh",
       "details": [
-        "Developed native Android apps using Java/Kotlin and cross-platform apps using Flutter.",
-        "Engineered complex UI and real-time data sync for a large-scale health & wellness Android app.",
-        "Implemented Clean Architecture with Dagger Hilt and Kotlin Coroutines for async programming.",
-        "Led mobile teams delivering projects on schedule; collaborated with designers and product managers."
+        "Developed and maintained native <strong>Android</strong> apps using <strong>Java/Kotlin</strong> and cross-platform apps for <strong>Android</strong> and <strong>iOS</strong> using <strong>Flutter</strong>.",
+        "Engineered complex <strong>UI</strong> and <strong>real-time data synchronization</strong> for a large-scale <strong>Android</strong> application in the health and wellness sector.",
+        "Implemented <strong>Clean Architecture</strong> with <strong>Dagger Hilt</strong> for dependency injection and <strong>Kotlin Coroutines</strong> for <strong>asynchronous</strong> programming, improving code maintainability and scalability.",
+        "Led mobile app development teams, consistently delivering projects on schedule and meeting product deadlines.",
+        "Collaborated with <strong>designers</strong> and <strong>product managers</strong> throughout the development lifecycle to deliver high-quality apps and exceptional user experiences."
       ]
     },
     {
@@ -71,9 +72,10 @@
       "title": "Android Developer",
       "place": "Prime IT — Narayanganj, Bangladesh",
       "details": [
-        "Developed native Android apps in Java/Kotlin and cross-platform apps in Flutter.",
-        "Implemented MVVM with Dagger Hilt and Coroutines; integrated RESTful APIs.",
-        "Managed adaptive layouts for diverse screen sizes and requirements gathering."
+        "Developed native <strong>Android</strong> apps using <strong>Java/Kotlin</strong> and cross-platform apps using <strong>Flutter</strong>, from specifications and requirements gathering.",
+        "Integrated external <strong>RESTful APIs</strong> and managed adaptive layouts for diverse <strong>screen sizes</strong>.",
+        "Implemented <strong>MVVM Architecture</strong> utilizing <strong>Dagger Hilt</strong> and <strong>Kotlin Coroutines</strong> for structured development.",
+        "Introduced new technologies to enhance overall development efficiency."
       ]
     },
     {
@@ -81,9 +83,10 @@
       "title": "Android Developer (Part‑Time)",
       "place": "SoftLab IT — Dhaka, Bangladesh",
       "details": [
-        "Developed native Android apps using Java and Kotlin, ensuring robust functionality.",
-        "Adapted UI layouts for various screen sizes; integrated third-party libraries and APIs.",
-        "Implemented offline storage (SQLite), threading, and local databases."
+        "Developed native <strong>Android</strong> apps using <strong>Java</strong> and <strong>Kotlin</strong> from initial specifications, ensuring robust functionality and performance.",
+        "Adapted <strong>UI</strong> layouts to support various <strong>screen sizes</strong> and resolutions for a consistent experience across devices.",
+        "Integrated <strong>third-party libraries</strong>, <strong>APIs</strong>, offline storage (<strong>SQLite</strong>), <strong>threading</strong>, and local databases to enhance app capabilities.",
+        "Collaborated closely with <strong>designers</strong> and <strong>product managers</strong> to deliver intuitive, visually appealing applications."
       ]
     }
   ],
