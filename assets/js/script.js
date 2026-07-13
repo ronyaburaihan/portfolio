@@ -72,19 +72,19 @@ document.addEventListener('click', (e) => {
 
 /*--------------------- Data Loading -----------------------*/
 function loadData() {
-    const data = window.portfolioData
-    if (!data) {
-        console.error('portfolioData not found. Make sure data.js is loaded.')
-        return
-    }
-    applyProfile(data.profile)
-    renderSkillsCategorized(data.skills)
-    renderTimeline('education-timelines', data.education)
-    renderTimeline('experience-timelines', data.experience)
-    renderTimeline('training-timelines', data.training)
-    renderLanguages('languages-timelines', data.languages)
-    renderPortfolio(data.projects)
-    applyContact(data.profile.contacts)
+    fetch('assets/data/data.json')
+        .then(res => res.json())
+        .then(data => {
+            applyProfile(data.profile)
+            renderSkillsCategorized(data.skills)
+            renderTimeline('education-timelines', data.education)
+            renderTimeline('experience-timelines', data.experience)
+            renderTimeline('training-timelines', data.training)
+            renderLanguages('languages-timelines', data.languages)
+            renderPortfolio(data.projects)
+            applyContact(data.profile.contacts)
+        })
+        .catch(err => console.error('Failed to load data.json', err))
 }
 
 /*--------------------- Profile -----------------------*/
@@ -152,6 +152,17 @@ const categoryLabels = {
     personal:      'Personal'
 }
 
+function renderProjectLinks(p) {
+    const links = [
+        p.playStore && { href: p.playStore, label: 'Google Play' },
+        p.appStore  && { href: p.appStore,  label: 'App Store' },
+        p.website   && { href: p.website,   label: p.linkLabel || 'Website' }
+    ].filter(Boolean)
+
+    if (!links.length) return '—'
+    return links.map(l => `<a href="${l.href}" target="_blank" rel="noopener">${l.label}</a>`).join(' · ')
+}
+
 function renderPortfolio(projects) {
     const listEl = document.getElementById('portfolio-list')
     if (!listEl) return
@@ -187,9 +198,7 @@ function renderPortfolio(projects) {
                 <li>Period <span>${period}</span></li>
                 <li>Technologies <span>${techs.join(', ')}</span></li>
                 <li>Role <span>${p.role}</span></li>
-                <li>View online <span>${p.link
-                  ? `<a href="${p.link}" target="_blank" rel="noopener">${p.linkLabel || 'Link'}</a>`
-                  : '—'}</span></li>
+                <li>View online <span>${renderProjectLinks(p)}</span></li>
               </ul>
             </div>
           </div>

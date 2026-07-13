@@ -486,7 +486,7 @@ button { font-family: inherit; user-select: none; cursor: pointer; }
 .tab-content.active { display: block; }
 
 /* Timeline */
-.timelines { position: relative; padding-left: 4px; }
+.timelines { position: relative; }
 .timelines::before {
     content: ''; position: absolute;
     left: 5px; top: 0; height: 100%; width: 1px;
