@@ -1,6 +1,20 @@
 # Abu Raihan Rony — Portfolio
 
-Personal portfolio site: home, about, portfolio, and contact sections in a single-page layout.
+[![Deploy to GitHub Pages](https://github.com/ronyaburaihan/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/ronyaburaihan/portfolio/actions/workflows/deploy.yml)
+![No build step](https://img.shields.io/badge/build-none-brightgreen)
+![HTML/CSS/JS](https://img.shields.io/badge/stack-HTML%20%C2%B7%20CSS%20%C2%B7%20JS-blue)
+
+Personal portfolio site — home, about, portfolio, and contact sections in a single-page layout. Vanilla HTML/CSS/JS, no framework, no build step, content driven entirely by one JSON file.
+
+**Live:** https://ronyaburaihan.github.io/portfolio/
+
+## Features
+
+- Single-page layout with smooth section switching, dark mode, and mobile nav
+- Portfolio grid with category filtering and a project-details popup
+- Fully data-driven — profile, skills, education, experience, training, languages, and projects all render from `assets/data/data.json`
+- Zero build tooling — edit and deploy, no `npm install` required
+- Auto-deploys to GitHub Pages via GitHub Actions on every push to `main`
 
 ## Tech stack
 
@@ -33,3 +47,11 @@ All text, skills, experience, education, and project entries live in `assets/dat
 - Serve the folder with any static server, e.g. `python3 -m http.server`, then visit `http://localhost:8000`
 
 GitHub Pages serves over HTTPS, so the deployed site works with no extra setup.
+
+## Deployment
+
+Pushes to `main` trigger `.github/workflows/deploy.yml`, which publishes the repo to GitHub Pages via GitHub Actions. No build step — static files are deployed as-is. Requires repo Settings → Pages → Source set to **GitHub Actions**.
+
+## Contributing
+
+Issues and PRs welcome — typo fixes, accessibility improvements, and small enhancements are all fair game. For anything larger, open an issue first to discuss the change.
