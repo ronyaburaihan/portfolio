@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.07"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="710" cy="55" r="175" fill="white" opacity="0.05"/>
+  <circle cx="70" cy="410" r="145" fill="white" opacity="0.05"/>
+  <circle cx="670" cy="400" r="85" fill="white" opacity="0.04"/>
+  <!-- Icon circle -->
+  <circle cx="400" cy="175" r="90" fill="url(#iconGrad)" stroke="white" stroke-opacity="0.2" stroke-width="1.5"/>
+  <!-- Paw print - main pad (large oval) -->
+  <ellipse cx="400" cy="195" rx="32" ry="28" fill="white" opacity="0.92"/>
+  <!-- Paw print - toe 1 (top-left) -->
+  <ellipse cx="363" cy="155" rx="14" ry="17" fill="white" opacity="0.92" transform="rotate(-20 363 155)"/>
+  <!-- Paw print - toe 2 (top-center-left) -->
+  <ellipse cx="388" cy="143" rx="14" ry="17" fill="white" opacity="0.92" transform="rotate(-5 388 143)"/>
+  <!-- Paw print - toe 3 (top-center-right) -->
+  <ellipse cx="413" cy="143" rx="14" ry="17" fill="white" opacity="0.92" transform="rotate(5 413 143)"/>
+  <!-- Paw print - toe 4 (top-right) -->
+  <ellipse cx="437" cy="155" rx="14" ry="17" fill="white" opacity="0.92" transform="rotate(20 437 155)"/>
+  <!-- Title -->
+  <text x="400" y="308" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="38" font-weight="700" fill="white" letter-spacing="1">DogPro</text>
+  <text x="400" y="340" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" fill="white" opacity="0.75">Dog Breed Classification &amp; Profiling · Android</text>
+  <!-- Tech tags -->
+  <rect x="240" y="364" width="65" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="272" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Kotlin</text>
+  <rect x="315" y="364" width="72" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="351" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">MVVM</text>
+  <rect x="397" y="364" width="72" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="433" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Retrofit</text>
+  <rect x="479" y="364" width="88" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="523" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Coroutines</text>
+  <text x="400" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.5">Genofax® Life Sciences · Aug 2022 – Dec 2024</text>
+</svg>

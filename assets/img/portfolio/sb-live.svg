@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#9f1239"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.07"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="720" cy="55" r="180" fill="white" opacity="0.05"/>
+  <circle cx="75" cy="405" r="145" fill="white" opacity="0.05"/>
+  <circle cx="120" cy="80" r="70" fill="#ef4444" opacity="0.07"/>
+  <!-- Icon circle -->
+  <circle cx="400" cy="175" r="90" fill="url(#iconGrad)" stroke="white" stroke-opacity="0.2" stroke-width="1.5"/>
+  <!-- LIVE record icon - outer rings -->
+  <circle cx="400" cy="175" r="52" stroke="#ef4444" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <circle cx="400" cy="175" r="38" stroke="#ef4444" stroke-width="2.5" fill="none" opacity="0.65"/>
+  <!-- LIVE center dot -->
+  <circle cx="400" cy="175" r="24" fill="#ef4444" opacity="0.92"/>
+  <!-- Camera icon inside the dot -->
+  <rect x="388" y="168" width="24" height="16" rx="3" fill="white" opacity="0.9"/>
+  <polygon points="412,170 424,165 424,185 412,180" fill="white" opacity="0.9"/>
+  <!-- LIVE badge -->
+  <rect x="356" y="237" width="88" height="26" rx="5" fill="#ef4444" opacity="0.9"/>
+  <text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="white" letter-spacing="2">LIVE</text>
+  <!-- Signal waves on left -->
+  <path d="M 310 155 A 45 45 0 0 0 310 195" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 295 142 A 62 62 0 0 0 295 208" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <!-- Signal waves on right -->
+  <path d="M 490 155 A 45 45 0 0 1 490 195" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 505 142 A 62 62 0 0 1 505 208" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <!-- Title -->
+  <text x="400" y="308" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="38" font-weight="700" fill="white" letter-spacing="1">SB-Live</text>
+  <text x="400" y="340" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" fill="white" opacity="0.75">Live Stream Video Chat · Android</text>
+  <!-- Tech tags -->
+  <rect x="213" y="364" width="78" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="252" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Agora SDK</text>
+  <rect x="301" y="364" width="75" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="338" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Firebase</text>
+  <rect x="386" y="364" width="65" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="418" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Kotlin</text>
+  <rect x="461" y="364" width="128" height="28" rx="14" fill="white" opacity="0.13"/>
+  <text x="525" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white" opacity="0.9">Real-time Database</text>
+  <text x="400" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="white" opacity="0.5">Mar 2022 – Dec 2022</text>
+</svg>

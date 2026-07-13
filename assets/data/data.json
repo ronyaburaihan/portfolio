@@ -1,0 +1,278 @@
+{
+  "profile": {
+    "name": "Abu Raihan Rony",
+    "title": "Senior Mobile Application Developer",
+    "avatar": "assets/img/profile-pic.png",
+    "resumeUrl": "resume.pdf",
+    "tagline": "Leading development of high‑quality <span class='highlight'>Android</span> & <span class='highlight'>cross‑platform apps</span> with <span class='highlight'>Kotlin</span>, <span class='highlight'>Compose</span>, <span class='highlight'>Flutter</span>.",
+    "badges": ["<i class='fas fa-briefcase'></i> 6+ years experience", "<i class='fas fa-wifi'></i> Available for remote"],
+    "badgesHidden": ["<i class='fas fa-map-marker-alt'></i> Based in Bangladesh"],
+    "contacts": {
+      "email": "ronyaburaihan@gmail.com",
+      "phone": "+8801750787171",
+      "socials": {
+        "facebook": "https://www.facebook.com/ronyaburaihan",
+        "github": "https://github.com/ronyaburaihan",
+        "googlePlay": "https://play.google.com/store/apps/dev?id=7669748052960276373",
+        "website": "https://techdoctorbd.com/",
+        "youtube": "https://www.youtube.com/techdoctorbdr",
+        "linkedin": "https://www.linkedin.com/in/ronyaburaihan/",
+        "twitter": "https://twitter.com/ronyaburaihan"
+      }
+    }
+  },
+  "skills": {
+    "languages_frameworks": [
+      "Kotlin", "Java", "Dart", "XML", "Android SDK", "Flutter",
+      "Jetpack Compose", "Kotlin Multiplatform", "Ktor"
+    ],
+    "architecture_patterns": [
+      "Clean Architecture", "MVVM", "MVP", "MVC", "Modular Architecture", "Jetpack Components"
+    ],
+    "tools_technologies": [
+      "Android Studio", "Gradle", "Dagger 2", "Hilt", "Koin", "Coroutines", "Room", "Retrofit",
+      "Firebase Auth", "Firebase Firestore", "Firebase Realtime DB", "FCM", "Crashlytics",
+      "RESTful APIs", "Push Notifications", "Location Services", "SQLite", "WorkManager",
+      "RevenueCat", "AdMob", "Google ML Kit", "Agora SDK"
+    ]
+  },
+  "education": [
+    {
+      "date": "Jan 2018 – Jan 2022",
+      "title": "Bachelor of Science in Computer Science & Engineering",
+      "place": "Daffodil International University, Dhaka, Bangladesh"
+    }
+  ],
+  "experience": [
+    {
+      "date": "Jun 2025 – Present",
+      "title": "Senior Software Engineer (Android & iOS)",
+      "place": "Envobyte LTD — Khulna, Bangladesh",
+      "details": [
+        "Developed and maintained native Android apps using Kotlin, and cross-platform apps using Kotlin Multiplatform.",
+        "Applied Clean Architecture with Dagger Hilt, Koin, Kotlin Coroutines, Flow, and Retrofit.",
+        "Led mobile app development team, managing features, architecture decisions, and agile sprint delivery.",
+        "Performed code reviews, debugging, and performance optimization with cross-functional teams."
+      ]
+    },
+    {
+      "date": "Aug 2022 – Dec 2024",
+      "title": "Software Engineer – Android",
+      "place": "Genofax® Life Sciences — Dhaka, Bangladesh",
+      "details": [
+        "Developed native Android apps using Java/Kotlin and cross-platform apps using Flutter.",
+        "Engineered complex UI and real-time data sync for a large-scale health & wellness Android app.",
+        "Implemented Clean Architecture with Dagger Hilt and Kotlin Coroutines for async programming.",
+        "Led mobile teams delivering projects on schedule; collaborated with designers and product managers."
+      ]
+    },
+    {
+      "date": "Feb 2022 – May 2022",
+      "title": "Android Developer",
+      "place": "Prime IT — Narayanganj, Bangladesh",
+      "details": [
+        "Developed native Android apps in Java/Kotlin and cross-platform apps in Flutter.",
+        "Implemented MVVM with Dagger Hilt and Coroutines; integrated RESTful APIs.",
+        "Managed adaptive layouts for diverse screen sizes and requirements gathering."
+      ]
+    },
+    {
+      "date": "Dec 2019 – Jan 2022",
+      "title": "Android Developer (Part‑Time)",
+      "place": "SoftLab IT — Dhaka, Bangladesh",
+      "details": [
+        "Developed native Android apps using Java and Kotlin, ensuring robust functionality.",
+        "Adapted UI layouts for various screen sizes; integrated third-party libraries and APIs.",
+        "Implemented offline storage (SQLite), threading, and local databases."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Turner: LiveVoiceTranslator",
+      "image": "assets/img/portfolio/turner-translator.svg",
+      "period": "Dec 2025 – Jan 2026",
+      "technologies": ["Kotlin Multiplatform", "Jetpack Compose", "Koin", "Ktor", "Room", "Google ML Kit", "RevenueCat", "AdMob", "Firebase"],
+      "role": "Lead Mobile Developer",
+      "category": "professional",
+      "featured": true,
+      "description": "Led end-to-end development of a real-time voice and camera translation app using Kotlin Multiplatform (KMP) and Jetpack Compose, achieving 90%+ shared code across Android and iOS. Implemented voice translation, camera OCR, and conversation mode using Google ML Kit. Integrated cross-platform subscription billing via RevenueCat, AdMob, and Firebase Analytics.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.live.voice.translator.instant.speakandtranslate",
+      "appStore": "https://apps.apple.com/us/app/turner-live-voice-translator/id6757461822"
+    },
+    {
+      "title": "ImproveType: AI-Powered Keyboard",
+      "image": "assets/img/portfolio/improve-type.svg",
+      "period": "Oct 2025 – Feb 2026",
+      "technologies": ["Kotlin", "Jetpack Compose", "MVVM", "Clean Architecture", "Room", "Ktor", "Coroutines", "DataStore", "Google Play Billing", "AdMob", "Firebase"],
+      "role": "Lead Android Developer",
+      "category": "professional",
+      "featured": true,
+      "description": "Led end-to-end development of an AI-powered keyboard (IME) supporting 56+ languages, built with Kotlin, Jetpack Compose, MVVM, and Clean Architecture using a multi-module architecture. Developed AI text suggestions, grammar correction, voice input, clipboard history, and dynamic keyboard layouts. Integrated Google Play Billing, AdMob, Firebase, and optimized with baseline profiles and ProGuard/R8.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.improvetype.ai.keyboard",
+      "appStore": null
+    },
+    {
+      "title": "Genofax",
+      "image": "assets/img/portfolio/genofax.svg",
+      "period": "Sep 2022 – Dec 2024",
+      "technologies": ["Kotlin", "XML", "MVVM", "Dagger Hilt", "Retrofit", "Coroutines", "Flutter", "Dart", "MVC", "GetX"],
+      "role": "Mobile Application Developer",
+      "category": "professional",
+      "featured": true,
+      "description": "Developed and maintained a dual-platform health application for Android and iOS focusing on health assessment and well-being tracking. Led Android development using Kotlin, XML, and MVVM architecture with Dagger Hilt for dependency injection and Kotlin Coroutines. Managed iOS development with Flutter, Dart, MVC, and GetX for state management.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.genofax.app",
+      "appStore": "https://apps.apple.com/au/app/genofax/id1659824945"
+    },
+    {
+      "title": "DogPro – Dog Profiling",
+      "image": "assets/img/portfolio/dogpro.svg",
+      "period": "Aug 2022 – Dec 2024",
+      "technologies": ["Kotlin", "XML", "MVVM", "Retrofit", "Coroutines"],
+      "role": "Android Developer",
+      "category": "professional",
+      "featured": false,
+      "description": "Android app for dog breed classification and profiling. Enhanced performance, integrated image recognition using ML, and improved API communication via Retrofit and Kotlin Coroutines for a smooth user experience.",
+      "playStore": null,
+      "appStore": null
+    },
+    {
+      "title": "Amar Arabi Ovidhan",
+      "image": "assets/img/portfolio/amar-arabi.svg",
+      "period": "Mar 2022 – Mar 2023",
+      "technologies": ["Kotlin", "XML", "MVVM", "Dagger Hilt", "Retrofit", "Room", "Coroutines"],
+      "role": "Android Developer",
+      "category": "personal",
+      "featured": false,
+      "description": "Rebuilt and modernized an Android Arabic dictionary app with an enhanced UI. Implemented user authentication, word list browsing, search functionality, and bookmark management. Enabled offline access via Room database.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.amararabiovidhan.arabicdictionary",
+      "appStore": null
+    },
+    {
+      "title": "Prime Bazar – E-commerce App",
+      "image": "assets/img/portfolio/prime-bazar.svg",
+      "period": "Feb 2022 – May 2022",
+      "technologies": ["Flutter", "Dart"],
+      "role": "Flutter Developer",
+      "category": "professional",
+      "featured": false,
+      "description": "Contributed to the development of an e-commerce application using Flutter. Optimized codebase for improved performance and maintainability. Added new features, updated UI elements, and resolved bugs to enhance the shopping experience.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.primebazar.app",
+      "appStore": null
+    },
+    {
+      "title": "SB-Live – Live Stream Video Chat",
+      "image": "assets/img/portfolio/sb-live.svg",
+      "period": "Mar 2022 – Dec 2022",
+      "technologies": ["Kotlin", "XML", "MVVM", "Agora SDK", "Firebase Authentication", "Firebase Realtime Database"],
+      "role": "Android Developer",
+      "category": "personal",
+      "featured": false,
+      "description": "Developed an Android social platform for real-time live streaming and video chat from scratch. Enabled user broadcasting, connection, and engagement through virtual gifts. Integrated Agora SDK for live streaming, Firebase Authentication, and Firebase Realtime Database for data syncing.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.sbliveapp.sblive",
+      "appStore": null
+    },
+    {
+      "title": "Talent Torrent",
+      "image": "assets/img/portfolio/talent-torrent.svg",
+      "period": "Aug 2022 – Dec 2024",
+      "technologies": ["Kotlin", "XML", "MVVM", "Coroutines", "Stripe"],
+      "role": "Android Developer",
+      "category": "professional",
+      "featured": false,
+      "description": "Technology-based remote work platform connecting talent and businesses globally. Optimized performance, integrated Stripe payment gateway, and maintained scalable architecture for smooth remote collaboration.",
+      "playStore": null,
+      "appStore": null
+    },
+    {
+      "title": "Ramadan Calendar",
+      "image": "assets/img/portfolio/ramadan-calendar.png",
+      "created": "May 6, 2019",
+      "technologies": ["Kotlin", "XML"],
+      "role": "Developer",
+      "category": "play-store",
+      "featured": false,
+      "description": "Convenient Ramadan companion for Muslims with exact sahri and iftar schedules for all districts of Bangladesh. Features district selection, daily countdown timers, and alarm setting for sahri and iftar.",
+      "playStore": "https://play.google.com/store/apps/details?id=englesoft.com.dailyramadan"
+    },
+    {
+      "title": "Speak English Online",
+      "image": "assets/img/portfolio/speak-english-online.png",
+      "created": "July 19, 2021",
+      "technologies": ["Kotlin", "XML", "Firebase", "Agora SDK"],
+      "role": "Developer",
+      "category": "play-store",
+      "featured": false,
+      "description": "English speaking practice app with anonymous global voice calls — no login required. Provides unlimited free calls with strangers worldwide, helping users improve their English speaking skills from anywhere.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.techdoctorbd.anonymouscall"
+    },
+    {
+      "title": "Starnote Social",
+      "image": "assets/img/portfolio/star-note-social.PNG",
+      "created": "February 12, 2021",
+      "technologies": ["Java", "Kotlin", "XML", "Firebase", "Sinch SDK"],
+      "role": "Developer",
+      "category": "play-store",
+      "featured": false,
+      "description": "Social and learning app with feeds, groups, audio/video calls, live streaming, games, and e-commerce. Features teacher-partner matching, privacy controls, and real-time notifications.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.stardigiinternational.starnotee"
+    },
+    {
+      "title": "Age Calculator",
+      "image": "assets/img/portfolio/age-calculator.png",
+      "created": "November 22, 2020",
+      "technologies": ["Java", "XML"],
+      "role": "Developer",
+      "category": "play-store",
+      "featured": false,
+      "description": "Calculates your exact age in years, months, weeks, days, hours, minutes, and seconds. Shows upcoming ten birthdays with a clean, intuitive interface.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.techdoctorbd.agecalculator"
+    },
+    {
+      "title": "Alo Blood Donor",
+      "image": "assets/img/portfolio/alo-blood-donor.png",
+      "created": "July 29, 2019",
+      "technologies": ["Java", "XML", "Firebase"],
+      "role": "Developer",
+      "category": "play-store",
+      "featured": false,
+      "description": "Blood donor finder app powered by Firebase, enabling users to find nearby blood donors quickly. Features donor registration, district-based listings, and direct contact flow to save lives.",
+      "playStore": "https://play.google.com/store/apps/details?id=bd.com.aloblooddonor"
+    },
+    {
+      "title": "Hash Generator",
+      "image": "assets/img/portfolio/hash-generator.png",
+      "created": "December 28, 2020",
+      "technologies": ["Kotlin", "XML"],
+      "role": "Developer",
+      "category": "play-store",
+      "featured": false,
+      "description": "Generates SHA-1/224/256/384/512 and MD5 hashes for any text input. Copy hash to clipboard instantly with a clean, minimal interface.",
+      "playStore": "https://play.google.com/store/apps/details?id=com.techdoctorbd.hashgenerator"
+    },
+    {
+      "title": "Application Landing Website",
+      "image": "assets/img/portfolio/techdoctorbd.PNG",
+      "created": "January 2021",
+      "technologies": ["HTML", "CSS", "Bootstrap", "jQuery"],
+      "role": "Developer",
+      "category": "personal",
+      "featured": false,
+      "description": "Responsive marketing landing website for mobile applications. Built with Bootstrap for responsive layout and jQuery for interactive elements.",
+      "website": "https://techdoctorbd.com",
+      "linkLabel": "Website"
+    }
+  ],
+  "training": [
+    {
+      "date": "Jul 2018 – Dec 2018",
+      "title": "Android Application Development",
+      "place": "BASIS Institute of Technology & Management Limited (BITM), Dhaka, Bangladesh",
+      "details": null
+    }
+  ],
+  "languages": [
+    { "name": "Bangla", "level": "Native or Bilingual Proficiency" },
+    { "name": "English", "level": "Professional Working Proficiency" }
+  ]
+}
