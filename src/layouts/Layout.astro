@@ -1,0 +1,105 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+const { base } = Astro.site ? { base: import.meta.env.BASE_URL } : { base: '' };
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="author" content="Abu Raihan Rony" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={new URL(`${base}/assets/img/og-cover.png`, Astro.url)} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={new URL(`${base}/assets/img/og-cover.png`, Astro.url)} />
+
+		<link rel="canonical" href={Astro.url} />
+		<meta name="theme-color" content="#0E1013" />
+		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%230E1013'/%3E%3Ctext x='32' y='43' font-family='Helvetica,Arial' font-size='30' font-weight='bold' fill='%235B9CF6' text-anchor='middle'%3EAR%3C/text%3E%3C/svg%3E" />
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+		<script is:inline>
+			(() => {
+				try {
+					const theme = localStorage.getItem('theme');
+					if (theme === 'dark' || theme === 'light') {
+						document.documentElement.dataset.theme = theme;
+					}
+				} catch (_) {}
+			})();
+		</script>
+
+		<script is:inline type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Abu Raihan Rony",
+			"jobTitle": "Senior Mobile Application Developer",
+			"url": "https://ronyaburaihan.github.io/portfolio/",
+			"image": "https://ronyaburaihan.github.io/portfolio/assets/img/og-cover.png",
+			"email": "mailto:ronyaburaihan@gmail.com",
+			"telephone": "+8801750787171",
+			"address": { "@type": "PostalAddress", "addressLocality": "Khulna", "addressCountry": "BD" },
+			"worksFor": { "@type": "Organization", "name": "Envobyte Ltd." },
+			"alumniOf": { "@type": "CollegeOrUniversity", "name": "Daffodil International University" },
+			"knowsLanguage": ["Bengali", "English"],
+			"knowsAbout": ["Android", "Kotlin", "Jetpack Compose", "Kotlin Multiplatform",
+				"Flutter", "Swift", "SwiftUI", "Mobile Application Development", "Clean Architecture"],
+			"sameAs": [
+				"https://github.com/ronyaburaihan",
+				"https://www.linkedin.com/in/ronyaburaihan/"
+			]
+		}
+		</script>
+	</head>
+	<body>
+		<a class="skip" href="#main">Skip to main content</a>
+		<slot />
+		
+		<style is:global>
+			@import "../styles/base.css";
+			@import "../styles/layout.css";
+			@import "../styles/demos.css";
+			@import "../styles/sections.css";
+			@import "../styles/theme.css";
+			@import "../styles/motion.css";
+		</style>
+
+		<script>
+			// Global client-side interactivity
+			import { initTheme } from '../scripts/theme.js';
+			import { initNavigation } from '../scripts/navigation.js';
+			import { initDemos } from '../scripts/demos.js';
+			import { initClipboard } from '../scripts/clipboard.js';
+			import { initMotion } from '../scripts/motion.js';
+
+			// Initialize modules
+			initTheme();
+			initNavigation();
+			initDemos();
+			initClipboard();
+			initMotion();
+		</script>
+	</body>
+</html>

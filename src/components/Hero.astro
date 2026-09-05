@@ -1,0 +1,53 @@
+---
+const { base } = Astro.site ? { base: import.meta.env.BASE_URL } : { base: '' };
+---
+
+<section class="hero" id="top-hero">
+    <div class="shell">
+        <div class="hero-grid">
+            <div>
+                <p class="avail" data-r><i></i> Available for senior mobile roles</p>
+                <p class="hero-role" data-r>ABU RAIHAN RONY / SENIOR MOBILE DEVELOPER</p>
+                <h1 data-r>Thoughtful code.<br><span>Exceptional</span><br>mobile experiences.</h1>
+                <p class="hero-sum" data-r>I turn complex ideas into intuitive Android and iOS apps. Six years of hands-on engineering, shared codebases, and products shipped to both stores. Currently leading mobile at <strong>Envobyte Ltd.</strong></p>
+                <div class="hero-cta" data-r>
+                    <a class="btn btn-primary" href="#work">
+                        <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                            <path d="M5 12h14m-6-6 6 6-6 6" />
+                        </svg> Explore my work
+                    </a>
+                    <a class="btn" id="dlResume" href={`${base}/resume.pdf`} download="Abu-Raihan-Rony-Resume.pdf">
+                        <svg class="icon" width="16" height="16" viewBox="0 0 24 24">
+                            <path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 20h16" />
+                        </svg> Download résumé
+                    </a>
+                    <a class="btn btn-social" href="https://github.com/ronyaburaihan" target="_blank" rel="noopener">
+                        GitHub
+                        <svg class="icon" width="14" height="14" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M9 7h8v8" />
+                        </svg>
+                    </a>
+                    <a class="btn btn-social" href="https://www.linkedin.com/in/ronyaburaihan/" target="_blank"
+                        rel="noopener">LinkedIn
+                        <svg class="icon" width="14" height="14" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M9 7h8v8" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <aside class="identity" aria-label="Developer profile" data-r>
+                <div class="identity-top"><span>ENGINEER. LEAD. BUILDER.</span><span class="identity-spark" aria-hidden="true">✳</span></div>
+                <div class="identity-art"><div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div><img class="profile-photo" src={`${base}/assets/img/profile-pic.webp`} alt="Portrait of Abu Raihan Rony" width="1254" height="1254" fetchpriority="high" decoding="async"><span class="art-note note-top" aria-hidden="true">Kotlin</span><span class="art-note note-bottom" aria-hidden="true">Android + iOS</span></div>
+                <div class="identity-bottom"><div><strong>Abu Raihan Rony</strong><span>Khulna, Bangladesh · GMT+6</span></div><a href="#about" aria-label="More about Abu Raihan Rony">↗</a></div>
+            </aside>
+        </div>
+
+        <div class="stats" data-r>
+            <div class="stat"><b>6+</b><span>Years building mobile</span></div>
+            <div class="stat"><b>20+</b><span>Apps live on the stores</span></div>
+            <div class="stat"><b>2</b><span>Platforms, one codebase</span></div>
+            <div class="stat"><b>4</b><span>Companies shipped for</span></div>
+        </div>
+        <div class="technology-strip" aria-label="Core technologies"><span>BUILT WITH PURPOSE. SHIPPED WITH</span><b>Kotlin</b><b>Jetpack Compose</b><b>Kotlin Multiplatform</b><b>Flutter</b><b>SwiftUI</b></div>
+    </div>
+</section>

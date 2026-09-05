@@ -1,0 +1,381 @@
+---
+import { projects } from '../data/portfolio';
+---
+
+<section id="work">
+    <div class="shell">
+        <div class="sec-head" data-r>
+            <p class="eyebrow">Selected work</p>
+            <h2>Selected work. Real-world impact.</h2>
+            <p class="sec-sub">From real-time translation to AI-powered tools. A closer look at the products I’ve helped bring to life at Envobyte Ltd.</p>
+        </div>
+
+        <div class="work-list">
+            <!-- 01 Turner -->
+            <article class="card has-demo" data-r>
+                <div class="card-body"><p class="project-index">01 / LIVE TRANSLATION</p>
+                <div class="card-top">
+                    <h3>Turner: LiveVoiceTranslator</h3>
+                    <span class="badge">Android &amp; iOS</span>
+                    <span class="card-when">Dec 2025 — Feb 2026</span>
+                </div>
+                <p class="card-role">Lead Mobile Developer · team of 5</p>
+                <p class="card-desc">Real-time voice, text and camera translation, built for both platforms from
+                    a single Kotlin Multiplatform codebase.</p>
+                <ul class="card-points">
+                    <li>Shipped to Google Play and the App Store with <strong>~80% of the code shared</strong>
+                        across Android and iOS.</li>
+                    <li>Built live speech-to-text over WebSockets, on-device translation across <strong>66
+                            languages</strong>, and camera OCR with document export.</li>
+                    <li>Secured the API with Firebase App Check and usage metering; monetized through RevenueCat
+                        subscriptions and AdMob.</li>
+                </ul>
+                <details class="case-detail"><summary>Engineering notes <span aria-hidden="true">+</span></summary><div class="card-duo">
+                    <div>
+                        <h4>The challenge</h4>
+                        <p>Translation is latency-sensitive, ML Kit is platform-specific, and billing, ads
+                            and analytics each demand separate store-compliant wiring. Five developers, two
+                            platforms, zero tolerance for a second-class iOS experience.</p>
+                    </div>
+                    <div>
+                        <h4>The approach</h4>
+                        <p>A shared KMP core for domain, data and state, with expect/actual seams into native ML
+                            Kit, camera, speech and TTS on each side. Room-backed history and an offline
+                            phrasebook keep it usable without a network, and one release pipeline keeps both
+                            stores in lockstep.</p>
+                    </div>
+                </div></details>
+                <div class="chips"><span>Kotlin Multiplatform</span><span>Compose
+                        Multiplatform</span><span>Ktor</span><span>Room</span><span>Google ML
+                        Kit</span><span>RevenueCat</span></div>
+                <div class="card-links">
+                    <a class="btn btn-sm" target="_blank" rel="noopener"
+                        href="https://play.google.com/store/apps/details?id=com.live.voice.translator.instant.speakandtranslate">Google
+                        Play <svg class="icon" width="13" height="13" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M9 7h8v8" />
+                        </svg></a>
+                    <a class="btn btn-sm" target="_blank" rel="noopener"
+                        href="https://apps.apple.com/us/app/turner-live-voice-translator/id6757461822">App Store
+                        <svg class="icon" width="13" height="13" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M9 7h8v8" />
+                        </svg></a>
+                </div>
+                </div>
+                <div class="demo-col" data-r>
+                    <div class="device" id="phoneT" role="button" tabindex="0"
+                        aria-label="Translator demo — activate for the next phrase">
+                        <div class="dscreen">
+                            <div class="dnotch"></div>
+                            <div class="dstatus"><span>9:41</span>
+                                <span class="si">
+                                    <svg width="14" height="9" viewBox="0 0 18 12" fill="currentColor" aria-hidden="true">
+                                        <rect y="7" width="3" height="5" rx="1" /><rect x="5" y="4.6" width="3" height="7.4" rx="1" />
+                                        <rect x="10" y="2.2" width="3" height="9.8" rx="1" /><rect x="15" width="3" height="12" rx="1" opacity=".35" /></svg>
+                                    <svg width="19" height="9" viewBox="0 0 25 12" aria-hidden="true">
+                                        <rect x=".7" y=".7" width="20" height="10.6" rx="3.2" fill="none" stroke="currentColor" opacity=".4" />
+                                        <rect x="2.6" y="2.6" width="14" height="6.8" rx="1.8" fill="currentColor" />
+                                        <path d="M22.6 4v4a2.1 2.1 0 0 0 0-4z" fill="currentColor" opacity=".4" /></svg></span>
+                            </div>
+                            <div class="dbody">
+                                <div class="dhead"><span>TURNER · LIVE VOICE</span><b>KMP</b></div>
+                                <p class="dtitle">Translate</p>
+                                <div class="dcard">
+                                    <div class="dl"><span>ENGLISH · SOURCE</span><span id="tMode">VOICE</span></div>
+                                    <p class="dt" id="tSrc">—</p>
+                                    <div class="wave" id="tWave"></div>
+                                </div>
+                                <div class="mic" id="tMic" aria-hidden="true">
+                                    <svg class="icon" width="18" height="18" viewBox="0 0 24 24">
+                                        <rect x="9" y="2.5" width="6" height="11" rx="3" /><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21" />
+                                    </svg>
+                                </div>
+                                <div class="dcard">
+                                    <div class="dl"><span id="tTgtLab">ESPAÑOL · TRANSLATED</span></div>
+                                    <p class="dt" id="tTgt" dir="ltr">—</p>
+                                </div>
+                                <p class="dstat" id="tStat">DEMO RUNNING</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="demo-hint">Interactive — tap for the next phrase</p>
+                </div>
+            </article>
+
+            <!-- 02 ImproveType -->
+            <article class="card has-demo" data-r>
+                <div class="card-body"><p class="project-index">02 / AI KEYBOARD</p>
+                <div class="card-top">
+                    <h3>ImproveType: AI-Powered Keyboard</h3>
+                    <span class="badge">Android &amp; iOS</span>
+                    <span class="card-when">Oct 2025 — Present</span>
+                </div>
+                <p class="card-role">Lead Mobile Developer</p>
+                <p class="card-desc">A system keyboard with on-device AI rewriting, grammar correction, tone
+                    change and translation — shipped natively on both platforms.</p>
+                <ul class="card-points">
+                    <li>Launched on both stores covering <strong>52 languages</strong>, 76 keyboard layouts and
+                        43 app locales.</li>
+                    <li>Delivered grammar fix, rewrite, tone change and translation, plus glide typing and
+                        next-word prediction from a 111K-word dictionary.</li>
+                    <li>Tuned the iOS keyboard extension to run inside Apple’s <strong>~60 MB memory
+                            ceiling</strong>; hardened Android startup with baseline profiles and R8.</li>
+                </ul>
+                <details class="case-detail"><summary>Engineering notes <span aria-hidden="true">+</span></summary><div class="card-duo">
+                    <div>
+                        <h4>The challenge</h4>
+                        <p>An IME is among the most performance-critical components on a phone. On iOS a
+                            keyboard extension is killed outright past a ~60&nbsp;MB memory ceiling — while
+                            still satisfying strict store policy and running AI across dozens of languages.</p>
+                    </div>
+                    <div>
+                        <h4>The approach</h4>
+                        <p>Multi-module Clean Architecture isolating the keyboard core, with a dynamic layout
+                            engine for language packs. Baseline profiles and R8 guard startup and frame budgets
+                            on Android; on iOS, lazily built panels, aggressive teardown between sessions, and
+                            an App Group plus Darwin notifications to reach the host app.</p>
+                    </div>
+                </div></details>
+                <div class="chips"><span>Kotlin</span><span>Jetpack
+                        Compose</span><span>Swift</span><span>SwiftUI</span><span>UIKit</span><span>Koin</span><span>StoreKit
+                        2</span></div>
+                <div class="card-links">
+                    <a class="btn btn-sm" target="_blank" rel="noopener"
+                        href="https://play.google.com/store/apps/details?id=com.improvetype.ai.keyboard">Google
+                        Play <svg class="icon" width="13" height="13" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M9 7h8v8" />
+                        </svg></a>
+                    <a class="btn btn-sm" target="_blank" rel="noopener"
+                        href="https://apps.apple.com/app/id6786580580">App Store <svg class="icon" width="13"
+                            height="13" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M9 7h8v8" />
+                        </svg></a>
+                </div>
+                </div>
+                <div class="demo-col" data-r>
+                    <div class="device" id="phoneK" role="button" tabindex="0"
+                        aria-label="Keyboard demo — activate to pause or resume">
+                        <div class="dscreen">
+                            <div class="dnotch"></div>
+                            <div class="dstatus"><span>9:41</span>
+                                <span class="si">
+                                    <svg width="14" height="9" viewBox="0 0 18 12" fill="currentColor" aria-hidden="true">
+                                        <rect y="7" width="3" height="5" rx="1" /><rect x="5" y="4.6" width="3" height="7.4" rx="1" />
+                                        <rect x="10" y="2.2" width="3" height="9.8" rx="1" /><rect x="15" width="3" height="12" rx="1" opacity=".35" /></svg>
+                                    <svg width="19" height="9" viewBox="0 0 25 12" aria-hidden="true">
+                                        <rect x=".7" y=".7" width="20" height="10.6" rx="3.2" fill="none" stroke="currentColor" opacity=".4" />
+                                        <rect x="2.6" y="2.6" width="14" height="6.8" rx="1.8" fill="currentColor" />
+                                        <path d="M22.6 4v4a2.1 2.1 0 0 0 0-4z" fill="currentColor" opacity=".4" /></svg></span>
+                            </div>
+                            <div class="dbody">
+                                <div class="dhead"><span>IMPROVETYPE · AI IME</span><b>52 LANGS</b></div>
+                                <p class="dtitle">Type with AI</p>
+                                <div class="dk-out"><span class="ph" id="kPh">Type something…</span><span
+                                        id="kTxt"></span><span class="caret"></span></div>
+                                <div class="dk">
+                                    <div class="dk-sugg" id="kSugg"></div>
+                                    <div class="dk-row" id="kR1"></div>
+                                    <div class="dk-row" id="kR2"></div>
+                                    <div class="dk-row" id="kR3"></div>
+                                    <div class="dk-row"><span class="dk-key fn">?123</span><span
+                                            class="dk-key">,</span><span class="dk-key sp">space</span><span
+                                            class="dk-key">.</span><span class="dk-key fn">return</span></div>
+                                    <p class="dk-foot">AI SUGGESTIONS · GRAMMAR · VOICE</p>
+                                </div>
+                                <p class="dstat" id="kStat">AUTO-TYPING</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="demo-hint">Interactive — tap to pause</p>
+                </div>
+            </article>
+
+            <!-- 03 Image Enlarger -->
+            <article class="card has-demo" data-r>
+                <div class="card-body"><p class="project-index">03 / IMAGE ENHANCEMENT</p>
+                <div class="card-top">
+                    <h3>Image Enlarger: AI Photo Upscaler</h3>
+                    <span class="badge">Android &amp; iOS</span>
+                    <span class="card-when">Jun 2025 — Present</span>
+                </div>
+                <p class="card-role">Senior Mobile Developer</p>
+                <p class="card-desc">AI photo upscaling, face restoration and background enhancement, metered by
+                    a credit quota and shipped to both stores.</p>
+                <ul class="card-points">
+                    <li>Built on one Kotlin Multiplatform codebase with <strong>~82% of the code
+                            shared</strong>, released on Google Play and the App Store.</li>
+                    <li>Integrated a server-side AI pipeline for upscaling, face restoration and background
+                        enhancement, funded by ads and subscriptions.</li>
+                    <li>Built an offline gallery with paging, crop and transform tools, a referral flow and an
+                        iOS share extension, covered by a shared unit-test suite.</li>
+                </ul>
+                <details class="case-detail"><summary>Engineering notes <span aria-hidden="true">+</span></summary><div class="card-duo">
+                    <div>
+                        <h4>The challenge</h4>
+                        <p>Upscaling runs server-side, so every result costs money and latency. The client
+                            had to meter a credit quota fairly, stay responsive while a job is in flight, and
+                            keep finished results available offline — on two platforms with one team.</p>
+                    </div>
+                    <div>
+                        <h4>The approach</h4>
+                        <p>A KMP core owning credits, job state and history, with SQLDelight paging the gallery so
+                            results survive a cold start. Platform seams handle picking, cropping and the iOS
+                            share extension, while ads and subscriptions top up the same quota through a single
+                            repository.</p>
+                    </div>
+                </div></details>
+                <div class="chips"><span>Kotlin Multiplatform</span><span>Compose
+                        Multiplatform</span><span>SQLDelight</span><span>Paging
+                        3</span><span>Ktor</span><span>RevenueCat</span></div>
+                <div class="card-links">
+                    <a class="btn btn-sm" target="_blank" rel="noopener"
+                        href="https://play.google.com/store/apps/details?id=com.image.enlarger.enhancer.upscaler">Google
+                        Play <svg class="icon" width="13" height="13" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M9 7h8v8" />
+                        </svg></a>
+                    <a class="btn btn-sm" target="_blank" rel="noopener"
+                        href="https://apps.apple.com/app/id6752014761">App Store <svg class="icon" width="13"
+                            height="13" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M9 7h8v8" />
+                        </svg></a>
+                </div>
+                </div>
+                <div class="demo-col" data-r>
+                    <div class="device" id="phoneE" role="button" tabindex="0"
+                        aria-label="Upscaler demo — activate to sweep the before and after comparison">
+                        <div class="dscreen">
+                            <div class="dnotch"></div>
+                            <div class="dstatus"><span>9:41</span>
+                                <span class="si">
+                                    <svg width="14" height="9" viewBox="0 0 18 12" fill="currentColor" aria-hidden="true">
+                                        <rect y="7" width="3" height="5" rx="1" /><rect x="5" y="4.6" width="3" height="7.4" rx="1" />
+                                        <rect x="10" y="2.2" width="3" height="9.8" rx="1" /><rect x="15" width="3" height="12" rx="1" opacity=".35" /></svg>
+                                    <svg width="19" height="9" viewBox="0 0 25 12" aria-hidden="true">
+                                        <rect x=".7" y=".7" width="20" height="10.6" rx="3.2" fill="none" stroke="currentColor" opacity=".4" />
+                                        <rect x="2.6" y="2.6" width="14" height="6.8" rx="1.8" fill="currentColor" />
+                                        <path d="M22.6 4v4a2.1 2.1 0 0 0 0-4z" fill="currentColor" opacity=".4" /></svg></span>
+                            </div>
+                            <div class="dbody">
+                                <div class="dhead"><span>IMAGE ENLARGER</span><b id="eScale">4×</b></div>
+                                <p class="dtitle">Enhance</p>
+                                <figure class="ba" id="eBa">
+                                    <img class="before" src="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'><defs><linearGradient%20id='sky'%20x1='0'%20y1='0'%20x2='0'%20y2='1'><stop%20offset='0'%20stop-color='%231B3A47'/><stop%20offset='1'%20stop-color='%232E5A5F'/></linearGradient><filter%20id=%22b%22><feGaussianBlur%20stdDeviation=%227%22/></filter></defs><rect%20width='400'%20height='400'%20fill='url%28%23sky%29'/><g%20filter=%22url%28%23b%29%22><circle%20cx='300'%20cy='96'%20r='38'%20fill='%23E9A860'/><path%20d='M0%20268l84-70%2066%2054%2074-84%2078%2066%2098-52v218H0z'%20fill='%23123039'/><path%20d='M0%20320l96-52%2082%2044%2092-58%20130%2060v86H0z'%20fill='%230C2029'/><g%20fill='%23E9EFF1'%20opacity='.85'><circle%20cx='72'%20cy='60'%20r='3'/><circle%20cx='140'%20cy='104'%20r='2.4'/><circle%20cx='196'%20cy='44'%20r='2.6'/><circle%20cx='44'%20cy='140'%20r='2'/><circle%20cx='248'%20cy='150'%20r='2.2'/></g><path%20d='M150%20400c0-46%2022-74%2050-74s50%2028%2050%2074z'%20fill='%230A1A21'/></g></svg>" alt="Original photo, soft and low resolution">
+                                    <img class="after" src="data:image/svg+xml,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'><defs><linearGradient%20id='sky'%20x1='0'%20y1='0'%20x2='0'%20y2='1'><stop%20offset='0'%20stop-color='%231B3A47'/><stop%20offset='1'%20stop-color='%232E5A5F'/></linearGradient></defs><rect%20width='400'%20height='400'%20fill='url%28%23sky%29'/><g%20><circle%20cx='300'%20cy='96'%20r='38'%20fill='%23E9A860'/><path%20d='M0%20268l84-70%2066%2054%2074-84%2078%2066%2098-52v218H0z'%20fill='%23123039'/><path%20d='M0%20320l96-52%2082%2044%2092-58%20130%2060v86H0z'%20fill='%230C2029'/><g%20fill='%23E9EFF1'%20opacity='.85'><circle%20cx='72'%20cy='60'%20r='3'/><circle%20cx='140'%20cy='104'%20r='2.4'/><circle%20cx='196'%20cy='44'%20r='2.6'/><circle%20cx='44'%20cy='140'%20r='2'/><circle%20cx='248'%20cy='150'%20r='2.2'/></g><path%20d='M150%20400c0-46%2022-74%2050-74s50%2028%2050%2074z'%20fill='%230A1A21'/></g></svg>" alt="The same photo after AI upscaling, sharp">
+                                    <i class="bar" aria-hidden="true"></i>
+                                    <figcaption class="cap-b">BEFORE</figcaption>
+                                    <figcaption class="cap-a">AFTER</figcaption>
+                                </figure>
+                                <div class="dcard">
+                                    <div class="dl"><span>CREDITS</span><span id="eCred">12 LEFT</span></div>
+                                    <p class="dt" id="eStage" style="min-height:0;font-size:13px">Ready to enhance</p>
+                                </div>
+                                <p class="dstat" id="eStat">TAP TO RE-RUN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="demo-hint">Interactive — tap to re-run</p>
+                </div>
+            </article>
+
+            <!-- 04 TTBoost -->
+            <article class="card has-demo" data-r>
+                <div class="card-body"><p class="project-index">04 / SECURITY & INFRASTRUCTURE</p>
+                <div class="card-top">
+                    <h3>TTBoost</h3>
+                    <span class="badge plain">Android</span>
+                    <span class="card-when">Jul — Aug 2026</span>
+                </div>
+                <p class="card-role">Senior Android Developer · security &amp; API layer</p>
+                <p class="card-desc">Security, authentication and networking ownership on a mature 18-module
+                    Android product, shipped at version 9.0.</p>
+                <ul class="card-points">
+                    <li>Rolled out <strong>Firebase App Check</strong> across every HTTP client, with token
+                        prefetch, failure classification and retry.</li>
+                    <li>Hardened request signing against replay attacks, backed by a regression test suite, and
+                        added device integrity and root detection.</li>
+                    <li>Migrated the client through <strong>four backend API versions</strong> (v3 to v6) with
+                        localized error handling.</li>
+                </ul>
+                <details class="case-detail"><summary>Engineering notes <span aria-hidden="true">+</span></summary><div class="card-duo">
+                    <div>
+                        <h4>The challenge</h4>
+                        <p>The app was already shipping at v9 with a large surface area and a backend mid-migration.
+                            Security work had to land without a rewrite, without invalidating live sessions, and
+                            while endpoints moved underneath it four times.</p>
+                    </div>
+                    <div>
+                        <h4>The approach</h4>
+                        <p>Centralised identity and signing into one interceptor chain, so every HTTP client
+                            inherited App Check and replay protection at once. A regression suite went in around
+                            signing before it was touched, then each endpoint version migrated behind the same
+                            seam with upstream failures mapped to localized messages.</p>
+                    </div>
+                </div></details>
+                <div class="chips"><span>Kotlin</span><span>Jetpack Compose</span><span>Dagger
+                        Hilt</span><span>Ktor</span><span>Paging 3</span><span>Firebase App Check</span></div>
+                <div class="card-links">
+                    <a class="btn btn-sm" target="_blank" rel="noopener"
+                        href="https://play.google.com/store/apps/details?id=com.ttboost.tik.tok.followers.likes">Google
+                        Play <svg class="icon" width="13" height="13" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M9 7h8v8" />
+                        </svg></a>
+                </div>
+                </div>
+                <div class="demo-col" data-r>
+                    <div class="device" id="phoneS" role="button" tabindex="0"
+                        aria-label="Request pipeline demo — activate to replay">
+                        <div class="dscreen">
+                            <div class="dnotch"></div>
+                            <div class="dstatus"><span>9:41</span>
+                                <span class="si">
+                                    <svg width="14" height="9" viewBox="0 0 18 12" fill="currentColor" aria-hidden="true">
+                                        <rect y="7" width="3" height="5" rx="1" /><rect x="5" y="4.6" width="3" height="7.4" rx="1" />
+                                        <rect x="10" y="2.2" width="3" height="9.8" rx="1" /><rect x="15" width="3" height="12" rx="1" opacity=".35" /></svg>
+                                    <svg width="19" height="9" viewBox="0 0 25 12" aria-hidden="true">
+                                        <rect x=".7" y=".7" width="20" height="10.6" rx="3.2" fill="none" stroke="currentColor" opacity=".4" />
+                                        <rect x="2.6" y="2.6" width="14" height="6.8" rx="1.8" fill="currentColor" />
+                                        <path d="M22.6 4v4a2.1 2.1 0 0 0 0-4z" fill="currentColor" opacity=".4" /></svg></span>
+                            </div>
+                            <div class="dbody">
+                                <div class="dhead"><span>TTBOOST · NETWORK</span><b>v6</b></div>
+                                <p class="dtitle">Request pipeline</p>
+                                <div class="log" id="sLog"></div>
+                                <p class="dstat" id="sStat">TAP TO REPLAY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="demo-hint">Interactive — tap to replay</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="alt" id="projects">
+    <div class="shell">
+        <div class="sec-head" data-r>
+            <p class="eyebrow">Project archive</p>
+            <h2>More project work.</h2>
+        </div>
+        <div class="rows" id="rows" data-r>
+            {projects.map((p) => {
+                const Content = (
+                    <>
+                        <div class="row-name">{p.name}</div>
+                        {p.period && <div class="row-year">{p.period}</div>}
+                        <p class="row-desc">{p.description}</p>
+                        <p class="row-tech">{p.technologies}</p>
+                    </>
+                );
+
+                if (p.link) {
+                    return (
+                        <a class="row" href={p.link} target="_blank" rel="noopener">
+                            {Content}
+                        </a>
+                    );
+                }
+                return <div class="row">{Content}</div>;
+            })}
+        </div>
+    </div>
+</section>

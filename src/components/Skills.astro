@@ -1,0 +1,24 @@
+---
+import { skills } from '../data/portfolio';
+---
+
+<section class="alt" id="skills">
+    <div class="shell">
+        <div class="sec-head" data-r>
+            <p class="eyebrow">Toolkit</p>
+            <h2>What I build with</h2>
+        </div>
+        <div class="cols" id="skills-cols" data-r>
+            {skills.map((c) => (
+                <div class="col">
+                    <h3>{c.title}</h3>
+                    <ul>
+                        {c.items.map((i) => (
+                            <li>{i}</li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
