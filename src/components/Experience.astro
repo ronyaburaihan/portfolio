@@ -1,0 +1,23 @@
+---
+import { experience } from '../data/portfolio';
+---
+
+<section id="experience">
+    <div class="shell">
+        <div class="sec-head" data-r>
+            <p class="eyebrow">Experience</p>
+            <h2>Professional journey.</h2>
+            <p class="sec-sub">A track record of building and leading mobile engineering across native and multiplatform ecosystems.</p>
+        </div>
+        <div class="xp" id="xp" data-r>
+            {experience.map((x) => (
+                <div class="xp-item">
+                    <p class="xp-when">{x.period}</p>
+                    <h3>{x.title}</h3>
+                    <p class="xp-house">{x.company}</p>
+                    <ul set:html={x.responsibilities.map(i => `<li>${i}</li>`).join('')}></ul>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>

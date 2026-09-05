@@ -1,0 +1,41 @@
+/* Motion adds feedback without changing document flow. */
+.identity.motion-visible .orbit-two { animation: orbit-turn 38s linear infinite; }
+.identity.motion-visible .identity-spark { animation: orbit-turn 24s linear infinite; }
+.identity.motion-visible .note-top { animation: note-drift-top 5.5s ease-in-out infinite; }
+.identity.motion-visible .note-bottom { animation: note-drift-bottom 6.5s ease-in-out infinite; }
+.avail.motion-visible i { animation: availability-pulse 2.8s ease-in-out infinite; }
+.orbit-one::after { content: ''; position: absolute; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); top: 32px; left: 32px; box-shadow: 0 0 0 5px var(--accent-dim); }
+.identity.motion-visible .orbit-one { animation: orbit-turn 32s linear infinite reverse; }
+@keyframes orbit-turn { to { transform: rotate(360deg); } }
+@keyframes monogram-float { 0%, 100% { transform: translate(-7px, -8px); } 50% { transform: translate(-7px, -17px); } }
+@keyframes note-drift-top { 0%, 100% { transform: translateY(0) rotate(7deg); } 50% { transform: translateY(-8px) rotate(3deg); } }
+@keyframes note-drift-bottom { 0%, 100% { transform: translateY(0) rotate(-6deg); } 50% { transform: translateY(7px) rotate(-3deg); } }
+@keyframes availability-pulse { 0%, 100% { box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 12%, transparent); } 50% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--ok) 4%, transparent); } }
+.scroll-progress { position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; pointer-events: none; background: var(--accent); transform: scaleX(0); transform-origin: left center; }
+.stat b { font-variant-numeric: tabular-nums; }
+.btn .icon, .btn > span[aria-hidden], .identity-bottom a, .contact-grid svg { transition: transform .35s var(--ease); }
+.case-detail summary span { transition: transform .3s var(--ease); }
+.nav a { position: relative; }
+.nav a::after { content: ''; position: absolute; height: 2px; background: var(--accent); bottom: 3px; left: 12px; right: 12px; transform: scaleX(0); transform-origin: left; transition: transform .3s var(--ease); }
+.nav a.on::after, .nav a:focus-visible::after { transform: scaleX(1); }
+.col { transition: transform .35s var(--ease), border-color .35s, box-shadow .35s; }
+.row-name { transition: transform .3s var(--ease), color .3s; }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+    html:not(.motion-paused) .card:hover { transform: translateY(-4px); }
+    html:not(.motion-paused) .col:hover { transform: translateY(-5px); border-color: var(--line); box-shadow: var(--shadow); }
+    html:not(.motion-paused) .identity-bottom a:hover { transform: rotate(8deg); }
+    html:not(.motion-paused) .btn:hover .icon { transform: translate(2px, -1px); }
+    html:not(.motion-paused) .contact-cta:hover > span { transform: translate(3px, -3px); }
+    html:not(.motion-paused) .contact-grid > :hover svg { transform: translate(2px, -2px); }
+    html:not(.motion-paused) .row:hover .row-name { transform: translateX(5px); color: var(--accent); }
+    .nav a:hover::after { transform: scaleX(1); }
+}
+html.motion-paused *, html.motion-paused *::before, html.motion-paused *::after,
+html.document-hidden *, html.document-hidden *::before, html.document-hidden *::after { animation-play-state: paused !important; }
+html.motion-paused { scroll-behavior: auto; }
+html.motion-paused *, html.motion-paused *::before, html.motion-paused *::after { transition: none !important; }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .scroll-progress { display: none; }
+}
+@media print { .scroll-progress { display: none; } }
