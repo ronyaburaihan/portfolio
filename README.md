@@ -1,57 +1,49 @@
 # Abu Raihan Rony — Portfolio
 
-[![Deploy to GitHub Pages](https://github.com/ronyaburaihan/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/ronyaburaihan/portfolio/actions/workflows/deploy.yml)
-![No build step](https://img.shields.io/badge/build-none-brightgreen)
-![HTML/CSS/JS](https://img.shields.io/badge/stack-HTML%20%C2%B7%20CSS%20%C2%B7%20JS-blue)
-
-Personal portfolio site — home, about, portfolio, and contact sections in a single-page layout. Vanilla HTML/CSS/JS, no framework, no build step, content driven entirely by one JSON file.
+Personal portfolio for a Senior Mobile Application Developer, built with vanilla HTML, CSS, and JavaScript. No framework, dependencies, or build step.
 
 **Live:** https://ronyaburaihan.github.io/portfolio/
 
 ## Features
 
-- Single-page layout with smooth section switching, dark mode, and mobile nav
-- Portfolio grid with category filtering and a project-details popup
-- Fully data-driven — profile, skills, education, experience, training, languages, and projects all render from `assets/data/data.json`
-- Zero build tooling — edit and deploy, no `npm install` required
-- Auto-deploys to GitHub Pages via GitHub Actions on every push to `main`
-
-## Tech stack
-
-- Vanilla HTML, CSS, JS — no build step, no framework
-- [Font Awesome](https://fontawesome.com/) 5 (vendored, `assets/webfonts/`)
-- Content is data-driven: `assets/js/script.js` fetches `assets/data/data.json` on load and renders profile, skills, education, experience, training, languages, and portfolio project cards
+- Responsive single-page layout with work, about, experience, expertise, and contact sections
+- Light and dark themes with a saved preference and system-theme support
+- Featured projects with interactive app previews and store links
+- Additional project listings and technical skills rendered from inline data
+- Mobile navigation, keyboard accessibility, and reduced-motion support with an animation toggle
+- Direct PDF résumé download from `resume.pdf`
+- Search and social-sharing metadata, including an Open Graph cover image
 
 ## Structure
 
 ```
-index.html
-resume.pdf
-assets/
-  css/        style.css, font-awesome.css
-  js/         script.js
-  data/       data.json          (single source of content — edit this to update the site)
-  img/        profile-pic.png, portfolio/*
-  webfonts/   Font Awesome font files
+index.html              Page markup, styles, project data, and interactions
+assets/img/og-cover.png  Social-sharing preview image
+resume.pdf              Downloadable résumé
+.github/workflows/       GitHub Pages deployment workflow
 ```
+
+The previous version’s assets are retained for compatibility with existing direct links. The current page does not load `assets/data/data.json`, `assets/css/style.css`, or `assets/js/script.js`.
 
 ## Editing content
 
-All text, skills, experience, education, and project entries live in `assets/data/data.json`. Edit that file; no HTML changes needed for content updates.
+Edit `index.html`:
+
+- Update the page markup for the introduction, featured projects, about, experience, and contact information.
+- Update the `PROJECTS` and `SKILLS` arrays for the additional project list and expertise section.
+- Replace `resume.pdf` to update the downloadable résumé; keep structured data and social metadata consistent with visible content.
+- Styles and scripts are embedded in the same file.
 
 ## Local preview
 
-`assets/js/script.js` loads content via `fetch()`. Browsers block `fetch()` of local files under the `file://` origin (opening `index.html` by double-click), so either:
+Serve the repository with a static server:
 
-- Open `index.html` in **Firefox** (allows `file://` fetch of same-folder files), or
-- Serve the folder with any static server, e.g. `python3 -m http.server`, then visit `http://localhost:8000`
+```sh
+python3 -m http.server 8000
+```
 
-GitHub Pages serves over HTTPS, so the deployed site works with no extra setup.
+Open http://localhost:8000. No dependency installation or build is required.
 
 ## Deployment
 
-Pushes to `main` trigger `.github/workflows/deploy.yml`, which publishes the repo to GitHub Pages via GitHub Actions. No build step — static files are deployed as-is. Requires repo Settings → Pages → Source set to **GitHub Actions**.
-
-## Contributing
-
-Issues and PRs welcome — typo fixes, accessibility improvements, and small enhancements are all fair game. For anything larger, open an issue first to discuss the change.
+Pushes to `main` trigger `.github/workflows/deploy.yml`, which publishes the repository to GitHub Pages. The workflow also supports manual runs. Repository Settings → Pages → Source must be set to **GitHub Actions**.
